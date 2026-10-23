@@ -1,0 +1,16 @@
+figure {
+  width: 310px;
+  height: 174px;
+}
+div {
+  .section-header {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+div {
+  .right {
+    display: flex;
+    justify-content: space-between;
+  }
+}
