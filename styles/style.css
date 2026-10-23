@@ -1,0 +1,58 @@
+<<<<<<< HEAD
+figure {
+  width: 310px;
+  height: 174px;
+}
+div {
+  .section-header {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+div {
+  .right {
+    display: flex;
+    justify-content: space-between;
+  }
+=======
+.site-header .container {
+  display: flex;
+  align-items: center;
+}
+.service-list {
+  display: flex;
+  gap: 32px;
+}
+.site-header {
+  height: 88px;
+  background-color: #101113;
+  color: #ffffff;
+}
+
+.site-header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 64px;
+  gap: 56px;
+}
+
+.service-list {
+  display: flex;
+  gap: 32px;
+  font-size: 14px;
+  color: #acaeb3;
+  font-weight: 400;
+}
+.mypage-link {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+.service-list .home {
+  color: #f3f1ed;
+  font-weight: 700;
+>>>>>>> feature/header-footer
+}
