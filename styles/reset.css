@@ -1,14 +1,14 @@
-/*---------- reset stylesheet ----------*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* Modern Reset
+   Based on Eric Meyer's Reset CSS
+*/
 
 html,
 body,
 div,
 span,
+applet,
+object,
+iframe,
 h1,
 h2,
 h3,
@@ -16,16 +16,47 @@ h4,
 h5,
 h6,
 p,
+blockquote,
+pre,
 a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
 em,
 img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
 strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
 dl,
 dt,
 dd,
 ol,
 ul,
 li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
 tbody,
 tfoot,
 thead,
@@ -34,70 +65,110 @@ th,
 td,
 article,
 aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
 footer,
 header,
+hgroup,
+menu,
 nav,
-section {
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-  font-family: "Pretendard", sans-serif;
 }
 
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
+/* box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html {
-  min-height: 100dvh;
+  height: 100%;
 }
 
 body {
-  min-height: 100vh;
-  min-height: 100dvh;
-  margin: 0;
-  padding: 0;
-  font-family: "Pretendard", sans-serif;
+  min-height: 100%;
+  line-height: 1.5;
 }
 
+/* list */
 ol,
 ul {
   list-style: none;
 }
 
-button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
+/* quote */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: none;
+}
+
+/* table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* media */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* form */
+button,
+input,
+textarea,
+select {
   font: inherit;
-  vertical-align: baseline;
-  background: transparent;
-  appearance: none;
-  border-radius: 0;
+  color: inherit;
 }
 
-button:focus {
-  outline: none;
-}
-
+/* button */
 button {
-  color: inherit;
-  cursor: pointer;
-  border: none;
-  background: none;
+  border: 0;
   padding: 0;
-  user-select: none;
+  background: none;
+  cursor: pointer;
 }
+
+/* link */
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
+}
+
+/* textarea */
+textarea {
+  resize: vertical;
+}
+
+/* hidden */
+[hidden] {
+  display: none !important;
 }
