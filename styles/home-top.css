@@ -1,0 +1,45 @@
+.top {
+  position: relative;
+  min-height: 590px;
+
+  display: flex;
+  align-items: center;
+  padding: 48px;
+}
+
+.top-image {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.top-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 590px;
+  object-fit: cover;
+}
+
+.top-image img:nth-child(2) {
+  top: auto;
+  bottom: 0;
+  height: auto;
+}
+
+.top-image img:nth-child(3) {
+  left: 0;
+  width: auto;
+}
+
+.top-content {
+  position: relative;
+  z-index: 1;
+}
+
+.top-caption {
+  position: absolute;
+  z-index: 1;
+  right: 50px;
+  bottom: 50px;
+}
