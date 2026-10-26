@@ -41,6 +41,7 @@
   font-size: 11px;
   font-weight: 400;
   color: #f3f1ed;
+  margin-bottom: 64px;
 }
 
 .title {
@@ -196,10 +197,4 @@ main {
   font-weight: 700;
   font-size: 20px;
   color: var(--color-text);
-}
-
-.mamabership {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
 }
