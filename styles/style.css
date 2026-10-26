@@ -375,7 +375,7 @@ main {
     display: none;
   }
 
-  .site-header .container a img {
+  .site-header .site-logo {
     width: 93px;
     height: 23px;
   }
