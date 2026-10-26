@@ -13,7 +13,7 @@
     <div class="container">
       <header class="site-header mypage-header">
         <div class="container">
-          <img src="./images/logo.png" alt="CINEMO" />
+          <img class="site-logo" src="./images/logo.png" alt="CINEMO" />
           <nav>
             <ul class="service-list">
               <li>홈</li>
@@ -24,7 +24,7 @@
           </nav>
           <span class="mypage-link">
             <img src="./images/avatar.png" alt="프로필 사진" />
-            욜로의 마이페이지
+            <span class="mypage-text">욜로의 마이페이지</span>
           </span>
         </div>
       </header>
@@ -55,37 +55,77 @@
             >
           </span>
         </div>
-        <div>
-          <div class="section-header">
-            <p class="title">오늘,새로운 세계로</p>
-            <p class="story">4편의 이야기</p>
+        <!-- 내가 찜한 콘텐츠 -->
+        <section class="mycontent">
+          <div class="mycontent-header">
+            <h2>내가 찜한 콘텐츠</h2>
+            <span>4편</span>
           </div>
-          <div>
-            <p class="title-second">낯선 풍경 속에서 시작되는 네 편의 이야기</p>
+          <div class="mycontent-list">
+            <div class="mycontent-card">
+              <div class="content-card-image">
+                <img
+                  src="./assets/Image quiet-orbit.jpg"
+                  alt="고요의 궤도 메인사진"
+                />
+                <button type="button" aria-label="고요의 궤도 찜">
+                  <img src="./assets/Vector-2.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="content-card-text">
+                <h3>고요의 궤도</h3>
+                <span>SF ∙ 미스터리 ∙ 15+</span>
+              </div>
+            </div>
+            <div class="mycontent-card">
+              <div class="content-card-image">
+                <img
+                  src="./assets/Image blue-hour.jpg"
+                  alt="파란 시간 메인사진"
+                />
+                <button type="button" aria-label="파란 시간 찜">
+                  <img src="./assets/Vector-2.svg" alt="" />
+                </button>
+              </div>
+              <div class="content-card-text">
+                <h3>파란 시간</h3>
+                <span>로맨스 ∙ 드라마 ∙ 12+</span>
+              </div>
+            </div>
+            <div class="mycontent-card">
+              <div class="content-card-image">
+                <img
+                  src="./assets/Image forest-letter.jpg"
+                  alt="숲에서 온 편지 메인사진"
+                />
+                <button type="button" aria-label="파란 시간 찜">
+                  <img src="./assets/Vector-2.svg" alt="" />
+                </button>
+              </div>
+              <div class="content-card-text">
+                <h3>숲에서 온 편지</h3>
+                <span>판타지 ∙ 드라마 ∙ 전체</span>
+              </div>
+            </div>
+            <div class="mycontent-card">
+              <div class="content-card-image">
+                <img
+                  src="./assets/Image night-diver.jpg"
+                  alt="밤의 잠수부 메인사진"
+                />
+                <button type="button" aria-label="파란 시간 찜">
+                  <img src="./assets/Vector-2.svg" alt="" />
+                </button>
+              </div>
+              <div class="content-card-text">
+                <h3>밤의 잠수부</h3>
+                <span>스릴러 ∙ 미스터리 ∙ 15+</span>
+              </div>
+            </div>
           </div>
-          <div class="card-container">
-            <div class="card">
-              <img src="./assets/Image quiet-orbit.jpg" alt="" />
-              <p class="first">고요의 궤도</p>
-              <p class="second">SF • 미스터리 • 15+</p>
-            </div>
-            <div class="card">
-              <img src="./assets/Image last-platform.jpg" alt="" />
-              <p class="first">마지막 승강장</p>
-              <p class="second">드라마 • 12+</p>
-            </div>
-            <div class="card">
-              <img src="./assets/Image blue-hour.jpg" alt="" />
-              <p class="first">파란 시간</p>
-              <p class="second">로맨스 • 드라마 • 12+</p>
-            </div>
-            <div class="card">
-              <img src="./assets/Image forest-letter.jpg" alt="" />
-              <p class="first">숲에서 온 편지</p>
-              <p class="second">판타지 • 드라마 • 전체</p>
-            </div>
-          </div>
-        </div>
+        </section>
+        <!-- 계정 설정 -->
         <section class="account-setting">
           <h3>계정 설정</h3>
           <dl class="setting-list">
@@ -116,7 +156,7 @@
           </div>
         </section>
       </main>
-      <footer class="site-footer">
+      <footer class="site-footer mypage-footer">
         <ul class="footer-menu">
           <li>서비스 소개</li>
           <li>이용약관</li>
@@ -125,8 +165,11 @@
         </ul>
 
         <p class="footer-notice">
-          CINEMO는 학습을 위한 가상의 OTT 서비스입니다. 콘텐츠와 인물은 모두
-          허구이며 실제 결제 · 재생은 제공하지 않습니다.
+          <span>CINEMO는 학습을 위한 가상의 OTT 서비스입니다.</span>
+          <span
+            >콘텐츠와 인물은 모두 허구이며 실제 결제 · 재생은 제공하지
+            않습니다.</span
+          >
         </p>
 
         <p class="footer-copyright">

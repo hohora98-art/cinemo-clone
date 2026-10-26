@@ -73,42 +73,6 @@
   color: #f3f1ed;
 }
 
-@media (max-width: 768px) {
-  .card-container {
-    grid-template-columns: repeat(4, 240px);
-    gap: 16px;
-    padding: 0 24px;
-    overflow-x: auto;
-  }
-
-  .card-container-2 {
-    grid-template-columns: repeat(4, 240px);
-    gap: 16px;
-    padding: 0 24px;
-    overflow-x: auto;
-  }
-
-  .section-header {
-    padding: 0 24px;
-    margin-top: 24px;
-  }
-
-  .title {
-    font-size: 20px;
-    font-weight: 700;
-  }
-
-  .title-second {
-    font-size: 12px;
-    font-weight: 400;
-    padding: 0 24px;
-  }
-
-  .story {
-    display: none;
-  }
-}
-
 main {
   background-color: #101113;
 }
@@ -184,6 +148,10 @@ main {
   line-height: 20px;
 }
 
+.mypage-header .mypage-link {
+  color: #f28d77;
+}
+
 .mypage-main {
   flex: 1;
   flex-direction: column;
@@ -238,6 +206,98 @@ main {
   color: var(--color-text);
   display: flex;
   align-items: flex-start;
+}
+
+/* 마이페이지 내가 찜한 콘텐츠 */
+.mycontent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mycontent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mycontent-header > h2 {
+  color: var(--color-text);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mycontent-header > span {
+  color: #7e8289;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.mycontent-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.mycontent-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.content-card-image {
+  position: relative;
+}
+
+.content-card-image > img {
+  display: block;
+  width: 100%;
+
+  border-radius: 4px;
+}
+
+.content-card-image > button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 28px;
+  height: 28px;
+  background-color: var(--color-background);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-card-image > button:hover img {
+  width: 18px;
+  height: 18px;
+}
+
+.content-card-image > button > img {
+  width: 16px;
+  height: 16px;
+}
+
+.content-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.content-card-text h3 {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.content-card-text span {
+  color: var(--color-secondary);
+  font-size: 11px;
+  font-weight: 400;
 }
 
 /* 마이페이지 계정 설정 */
@@ -343,7 +403,46 @@ main {
   height: 13.5px;
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
+=======
+/* 반응형 */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(4, 240px);
+    gap: 16px;
+    padding: 0 24px;
+    overflow-x: auto;
+  }
+
+  .card-container-2 {
+    grid-template-columns: repeat(4, 240px);
+    gap: 16px;
+    padding: 0 24px;
+    overflow-x: auto;
+  }
+
+  .section-header {
+    padding: 0 24px;
+    margin-top: 24px;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .title-second {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 24px;
+  }
+
+  .story {
+    display: none;
+  }
+
+>>>>>>> dda33206b696211834c830e62434a74de686d04b
   .site-header {
     height: 120px;
     border-bottom: 1px solid #303237;
@@ -371,7 +470,11 @@ main {
     display: none;
   }
 
+<<<<<<< HEAD
   .site-header .container a img {
+=======
+  .site-header .site-logo {
+>>>>>>> dda33206b696211834c830e62434a74de686d04b
     width: 93px;
     height: 23px;
   }
@@ -405,3 +508,40 @@ main {
     display: block;
   }
 }
+<<<<<<< HEAD
+=======
+
+#profile-change {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-secondary);
+  padding: 0 22px;
+}
+#profile-change img {
+  width: 15px;
+  height: 13.5px;
+}
+
+@media (max-width: 768px) {
+  .mypage-footer {
+    height: auto;
+    padding: 32px 24px;
+  }
+
+  .mypage-footer .footer-menu {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .mypage-footer .footer-notice {
+    line-height: 1.8;
+  }
+
+  .mypage-footer .footer-notice span {
+    display: block;
+  }
+}
+>>>>>>> dda33206b696211834c830e62434a74de686d04b
