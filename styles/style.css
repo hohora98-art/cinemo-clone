@@ -259,6 +259,7 @@ main {
 #profile-change img {
   width: 15px;
   height: 13.5px;
+}
 .account-setting > h3 {
   color: var(--color-text);
   font-size: 24px;
