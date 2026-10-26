@@ -6,8 +6,8 @@
     <title>Cinemo - My Page</title>
 
     <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/home-top.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="styles/home-top.css" />
   </head>
   <body>
     <div class="container">
@@ -47,46 +47,66 @@
             </h3>
           </span>
         </div>
-
-        <div class="mypage-wishlist">
-          <span class="my-wishlist-big">
-            <h3 class="mambers">내가 찜한 콘텐츠</h3>
-            <p>4편</p></span
-          >
-          <a
-            ><img src="assets/Image quiet-orbit.jpg" alt="고요의 궤도" />고요의
-            궤도
-            <p>SF · 미스터리 · 15+</p></a
-          >
-          <a
-            ><img src="assets/Image blue-hour.jpg" alt="파란 시간" />파란시간
-            <p>로맨스 · 드라마 · 12+</p></a
-          >
-          <a
-            ><img
-              src="assets/Image forest-letter.jpg"
-              alt="숲에서 온 편지"
-            />숲에서 온편지
-            <p>판타지 · 드라마 · 전체</p></a
-          >
-          <a
-            ><img src="assets/Image night-diver.jpg" alt="밤의 잠수부" />밤의
-            잠수부
-            <p>스릴러 · 미스터리 · 15+</p></a
-          >
+        <div>
+          <div class="section-header">
+            <p class="title">오늘,새로운 세계로</p>
+            <p class="story">4편의 이야기</p>
+          </div>
+          <div>
+            <p class="title-second">낯선 풍경 속에서 시작되는 네 편의 이야기</p>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/Image quiet-orbit.jpg" alt="" />
+              <p class="first">고요의 궤도</p>
+              <p class="second">SF • 미스터리 • 15+</p>
+            </div>
+            <div class="card">
+              <img src="./assets/Image last-platform.jpg" alt="" />
+              <p class="first">마지막 승강장</p>
+              <p class="second">드라마 • 12+</p>
+            </div>
+            <div class="card">
+              <img src="./assets/Image blue-hour.jpg" alt="" />
+              <p class="first">파란 시간</p>
+              <p class="second">로맨스 • 드라마 • 12+</p>
+            </div>
+            <div class="card">
+              <img src="./assets/Image forest-letter.jpg" alt="" />
+              <p class="first">숲에서 온 편지</p>
+              <p class="second">판타지 • 드라마 • 전체</p>
+            </div>
+          </div>
         </div>
-        <div class="mamabership">
-          <h3 class="members">계정 설정</h3>
-          <h4>이메일</h4>
-          <p>yolo202617@example.com</p>
-          <h4>비밀번호</h4>
-          <p>••••••••••••</p>
-          <h4>멤버십</h4>
-          <p>베이식 · 월 9,500원</p>
-          <h4>표시언어</h4>
-          <p>한국어</p>
-          <p class="mant">내 계정으로 접속 중입니다.</p>
-        </div>
+        <section class="mamabership">
+          <h3>계정 설정</h3>
+          <dl>
+            <div>
+              <dt>이메일</dt>
+              <dd>yolo202617@example.com</dd>
+              <button type="button">변경</button>
+            </div>
+            <div>
+              <dt>비밀번호</dt>
+              <dd>••••••••••••</dd>
+              <button type="button">변경</button>
+            </div>
+            <div>
+              <dt>멤버십</dt>
+              <dd>베이식 · 월 9,500원</dd>
+              <button type="button">관리</button>
+            </div>
+            <div>
+              <dt>표시언어</dt>
+              <dd>한국어</dd>
+              <button type="button">변경</button>
+            </div>
+          </dl>
+          <div>
+            <p>내 계정으로 접속 중입니다.</p>
+            <span>로그아웃</span>
+          </div>
+        </section>
       </main>
       <footer class="site-footer">
         <ul class="footer-menu">
