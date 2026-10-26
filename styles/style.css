@@ -97,6 +97,53 @@ div {
   line-height: 20px;
 }
 
-.mypage-header .mypage-link {
-  color: #f28d77;
+.mypage-main {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  gap: 56px;
+  padding: 56px 64px 64px;
+  background-color: var(--color-background);
+}
+.mypage-big .mycinemo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--color-warm-coral);
+}
+.mypage-big h2 {
+  font-family: "noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--color-text);
+}
+.mypage-big p {
+  font-family: "noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-secondary);
+  line-height: 1.7em;
+}
+
+#mypage-profile {
+  background-color: var(--color-surface);
+  display: flex;
+  gap: 32px;
+  padding: 48px 0;
+}
+#mypage-profile img {
+  width: 88px;
+  height: 88px;
+  border-radius: 8%;
+}
+#mypage-profile h3 {
+  font-family: "noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-text);
 }
