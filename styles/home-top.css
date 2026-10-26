@@ -170,6 +170,14 @@
   font-weight: 400;
 }
 
+.content-4 button:hover span {
+  font-weight: 900;
+}
+
+.card:hover .first {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .top {
     padding: 260px 24px 36px;
