@@ -41,6 +41,7 @@
   font-size: 11px;
   font-weight: 400;
   color: #f3f1ed;
+  margin-bottom: 64px;
 }
 
 .title {
@@ -70,6 +71,42 @@
   padding: 0 64px;
   margin-top: 48px;
   color: #f3f1ed;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(4, 240px);
+    gap: 16px;
+    padding: 0 24px;
+    overflow-x: auto;
+  }
+
+  .card-container-2 {
+    grid-template-columns: repeat(4, 240px);
+    gap: 16px;
+    padding: 0 24px;
+    overflow-x: auto;
+  }
+
+  .section-header {
+    padding: 0 24px;
+    margin-top: 24px;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .title-second {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 24px;
+  }
+
+  .story {
+    display: none;
+  }
 }
 
 main {
@@ -203,10 +240,92 @@ main {
   align-items: flex-start;
 }
 
-.mamabership {
+/* 마이페이지 계정 설정 */
+.account-setting {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+#profile-change {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-secondary);
+  padding: 0 22px;
+}
+#profile-change img {
+  width: 15px;
+  height: 13.5px;
+.account-setting > h3 {
+  color: var(--color-text);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.setting-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+
+  padding: 24px 0;
+
+  min-height: 64px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.row-first {
+  border-top: 1px solid var(--color-border);
+}
+
+.setting-row dt {
+  width: 180px;
+  flex-shrink: 0;
+
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.setting-row dd {
+  flex: 1 1 0%;
+  min-width: 0;
+
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.setting-row button {
+  margin-left: auto;
+
+  color: var(--color-warm-coral);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.setting-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setting-footer {
+  color: #7e8289;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.setting-footer button {
+  color: var(--color-secondary);
+}
+
+.setting-footer button:hover,
+.setting-row button:hover {
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 #profile-change {
