@@ -393,8 +393,8 @@ main {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-weight: 400;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 14px;
   color: var(--color-secondary);
   padding: 0 22px;
 }
@@ -475,7 +475,7 @@ main {
     display: none;
   }
 
-  .site-header .container a img {
+  .site-header .site-logo {
     width: 93px;
     height: 23px;
   }
@@ -508,18 +508,4 @@ main {
   .main-footer .footer-notice span {
     display: block;
   }
-}
-
-#profile-change {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 400;
-  font-size: 12px;
-  color: var(--color-secondary);
-  padding: 0 22px;
-}
-#profile-change img {
-  width: 15px;
-  height: 13.5px;
 }
