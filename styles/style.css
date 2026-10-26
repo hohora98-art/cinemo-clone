@@ -184,6 +184,10 @@ main {
   line-height: 20px;
 }
 
+.mypage-header .mypage-link {
+  color: #f28d77;
+}
+
 .mypage-main {
   flex: 1;
   flex-direction: column;
@@ -402,6 +406,26 @@ main {
   }
 
   .main-footer .footer-notice span {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .mypage-footer {
+    height: auto;
+    padding: 32px 24px;
+  }
+
+  .mypage-footer .footer-menu {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .mypage-footer .footer-notice {
+    line-height: 1.8;
+  }
+
+  .mypage-footer .footer-notice span {
     display: block;
   }
 }
