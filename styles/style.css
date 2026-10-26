@@ -1,3 +1,14 @@
+:root {
+  --color-background: #101113;
+  --color-surface: #1a1c1f;
+  --color-text: #f3f1ed;
+  --color-secondary: #acaeb3;
+  --color-warm-coral: #f28d77;
+  --color-border: #303237;
+  --color-button-text: #241512;
+  --color-button-background: #232529;
+}
+
 figure {
   width: 310px;
   height: 174px;
