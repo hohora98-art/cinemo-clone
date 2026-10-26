@@ -3,8 +3,8 @@
   min-height: 590px;
 
   display: flex;
-  align-items: center;
-  padding: 48px;
+  align-items: flex-start;
+  padding: 104px 64px 72px;
 }
 
 .top-image {
@@ -17,29 +17,153 @@
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 590px;
+  height: 100%;
   object-fit: cover;
 }
 
 .top-image img:nth-child(2) {
   top: auto;
   bottom: 0;
+  width: 100%;
   height: auto;
 }
 
 .top-image img:nth-child(3) {
-  left: 0;
+  right: auto;
+  height: 100%;
   width: auto;
 }
 
 .top-content {
   position: relative;
   z-index: 1;
+
+  width: 100%;
+  max-width: 540px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .top-caption {
   position: absolute;
+  right: 64px;
+  bottom: 72px;
   z-index: 1;
-  right: 50px;
-  bottom: 50px;
+
+  text-align: right;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content-1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 12px;
+}
+
+.content-1 span {
+  color: var(--color-warm-coral);
+  font-weight: 500;
+}
+
+.content-1 span:first-child {
+  display: inline-block;
+  height: 2px;
+  width: 24px;
+  background-color: var(--color-warm-coral);
+}
+
+.content-1 span:last-child {
+  color: var(--color-secondary);
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.content-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content-2 h1 {
+  color: var(--color-text);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.content-2 span {
+  color: var(--color-secondary);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.content-3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: var(--color-secondary);
+  font-size: 12px;
+}
+
+.top-content > p {
+  color: #d2d3d5;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.85;
+  overflow-wrap: wrap;
+}
+
+.content-4 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.content-4 button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 22px;
+
+  height: 48px;
+  width: auto;
+  border-radius: 4px;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.content-4 button img {
+  width: 18px;
+  height: 18px;
+}
+
+.content-4 button:first-child {
+  background-color: var(--color-warm-coral);
+  color: var(--color-button-color);
+}
+
+.content-4 button:last-child {
+  background-color: var(--color-button-background);
+  color: var(--color-text);
+}
+
+.top-caption p:first-child {
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.top-caption p:last-child {
+  color: var(--color-secondary);
+  font-size: 10px;
+  font-weight: 400;
 }
