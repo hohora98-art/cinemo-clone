@@ -73,6 +73,42 @@
   color: #f3f1ed;
 }
 
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(4, 240px);
+    gap: 16px;
+    padding: 0 24px;
+    overflow-x: auto;
+  }
+
+  .card-container-2 {
+    grid-template-columns: repeat(4, 240px);
+    gap: 16px;
+    padding: 0 24px;
+    overflow-x: auto;
+  }
+
+  .section-header {
+    padding: 0 24px;
+    margin-top: 24px;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .title-second {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 24px;
+  }
+
+  .story {
+    display: none;
+  }
+}
+
 main {
   background-color: #101113;
 }
