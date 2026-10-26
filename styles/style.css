@@ -403,6 +403,15 @@ main {
   height: 13.5px;
 }
 
+.service-list li:hover {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.mycontent-card:hover h3 {
+  text-decoration: underline;
+}
+
 /* 반응형 */
 @media (max-width: 768px) {
   .card-container {
