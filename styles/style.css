@@ -184,7 +184,10 @@ main {
   background-color: var(--color-surface);
   display: flex;
   gap: 32px;
-  padding: 48px 0;
+  padding: 32px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 #mypage-profile img {
   width: 88px;
@@ -196,10 +199,26 @@ main {
   font-weight: 700;
   font-size: 20px;
   color: var(--color-text);
+  display: flex;
+  align-items: flex-start;
 }
 
 .mamabership {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+#profile-change {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-secondary);
+  padding: 0 22px;
+}
+#profile-change img {
+  width: 15px;
+  height: 13.5px;
 }
