@@ -4,9 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cinemo - My Page</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="site-header mypage-header">
+      <div class="container">
+        <img src="./images/logo.png" alt="CINEMO" />
+        <nav>
+          <ul class="service-list">
+            <li>홈</li>
+            <li>영화</li>
+            <li>시리즈</li>
+            <li>내가 찜한 콘텐츠</li>
+          </ul>
+        </nav>
+        <span class="mypage-link">
+          <img src="./images/avatar.png" alt="프로필 사진" />
+          욜로의 마이페이지
+        </span>
+      </div>
+    </header>
     <main>
       <div class="mypage-big">
         <p>MY CINEMO</p>
@@ -67,6 +85,22 @@
         <p class="mant">내 계정으로 접속 중입니다.</p>
       </div>
     </main>
-    <footer></footer>
+    <footer class="site-footer">
+      <ul class="footer-menu">
+        <li>서비스 소개</li>
+        <li>이용약관</li>
+        <li>개인정보 처리방침</li>
+        <li>고객센터</li>
+      </ul>
+
+      <p class="footer-notice">
+        CINEMO는 학습을 위한 가상의 OTT 서비스입니다. 콘텐츠와 인물은 모두
+        허구이며 실제 결제 · 재생은 제공하지 않습니다.
+      </p>
+
+      <p class="footer-copyright">
+        © 2026 CINEMO. A FICTIONAL STREAMING PROJECT.
+      </p>
+    </footer>
   </body>
 </html>
