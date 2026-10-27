@@ -8,6 +8,7 @@
   --color-border: #303237;
   --color-button-text: #241512;
   --color-button-background: #232529;
+  --color-gray-light: #7e8289;
 }
 
 .header {
@@ -310,135 +311,93 @@
 }
 
 main {
-  background-color: #101113;
+  background-color: var(--color-background);
 }
 
 /* 헤더 */
-.site-header .container {
-  display: flex;
-  align-items: center;
-}
 .site-header {
   height: 88px;
-  background-color: #101113;
-  color: #ffffff;
-}
+  padding: 0 64px;
 
-.site-header .container {
-  height: 100%;
   display: flex;
   align-items: center;
-  padding: 0 64px;
   gap: 56px;
+
+  color: var(--color-text);
+  background-color: var(--color-background);
 }
 
 .service-list {
   display: flex;
   gap: 32px;
+
+  color: var(--color-secondary);
   font-size: 14px;
-  color: #acaeb3;
   font-weight: 400;
   white-space: nowrap;
 }
+
+.service-list .home {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
 .page-link {
   margin-left: auto;
+
   display: flex;
   align-items: center;
   gap: 12px;
+
   font-size: 14px;
   white-space: nowrap;
 }
 
 .mypage-link {
-  color: #f28d77;
+  color: var(--color-warm-coral);
 }
 
-.service-list .home {
-  color: #f3f1ed;
+/* 호버 효과 */
+.service-list a:hover {
   font-weight: 700;
+  color: var(--color-text);
+  cursor: pointer;
 }
 
 /* 푸터 */
 .site-footer {
   height: 166px;
   padding: 40px 64px;
+
+  color: var(--color-gray-light);
   font-size: 11px;
-  color: #7e8289;
-  border-top: 1px solid #303237;
-  font-family: "noto Sans KR", sans-serif;
-  background-color: #101113;
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-background);
 }
 
 .footer-menu {
   display: flex;
   gap: 32px;
+
+  color: var(--color-secondary);
   font-size: 12px;
-  color: #acaeb3;
-  line-height: 14px;
   font-weight: 400;
+  line-height: 14px;
 }
 
 .footer-notice {
-  line-height: 20px;
   padding: 20px 0 0;
+  line-height: 20px;
 }
 
 .footer-copyright {
   font-size: 10px;
   line-height: 12px;
-  font-family: "Inter", sans-serif;
 }
 
-/* 메인페이지 콘텐츠부분 */
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 64px;
-  margin-top: 48px;
-  color: #f3f1ed;
-}
-
-.section-header h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #f3f1ed;
-}
-
-.section-header span {
-  font-size: 12px;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-}
-
-.title-second {
-  font-size: 12px;
-  font-weight: 400;
-  padding: 0 64px;
-  margin-top: 8px;
-  color: #f3f1ed;
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  padding: 0 64px;
-  margin-top: 12px;
-}
-
-.card h3 {
-  font-size: 16px;
-  font-weight: 500;
-  margin-top: 12px;
-  color: #f3f1ed;
-}
-
-.card p {
-  font-size: 11px;
-  font-weight: 400;
-  color: #f3f1ed;
-  margin-bottom: 64px;
+/* 호버 효과 */
+.footer-menu a:hover {
+  text-decoration: underline;
 }
 
 /* 메인페이지 메인 윗부분 */
@@ -516,8 +475,10 @@ main {
 .content-1 span:first-child {
   display: inline-block;
   align-self: center;
+
   height: 2px;
   width: 24px;
+
   background-color: var(--color-warm-coral);
 }
 
@@ -613,7 +574,7 @@ main {
   font-size: 10px;
   font-weight: 400;
 }
-
+/* 호버 효과 */
 .content-4 button:first-child:hover {
   background-color: #ee7358;
   font-weight: 800;
@@ -624,6 +585,65 @@ main {
   font-weight: 800;
 }
 
+/* 메인페이지 콘텐츠부분 */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 64px;
+  margin-top: 48px;
+
+  color: var(--color-text);
+}
+
+.section-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.section-header span {
+  display: flex;
+  align-items: center;
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.title-second {
+  padding: 0 64px;
+  margin-top: 8px;
+
+  color: var(--color-text);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+
+  padding: 0 64px;
+  margin-top: 12px;
+}
+
+.card h3 {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 500;
+
+  margin-top: 12px;
+}
+
+.card p {
+  color: var(--color-text);
+  font-size: 11px;
+  font-weight: 400;
+
+  margin-bottom: 64px;
+}
+
+/* 호버 효과 */
 .card:hover .first {
   text-decoration: underline;
 }
@@ -689,6 +709,20 @@ main {
   align-items: flex-start;
 }
 
+#profile-change {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-secondary);
+  padding: 0 22px;
+}
+#profile-change img {
+  width: 15px;
+  height: 13.5px;
+}
+
 /* 마이페이지 내가 찜한 콘텐츠 */
 .mycontent {
   display: flex;
@@ -709,7 +743,7 @@ main {
 }
 
 .mycontent-header > span {
-  color: #7e8289;
+  color: var(--color-gray-light);
   font-size: 12px;
   font-weight: 400;
 }
@@ -742,25 +776,16 @@ main {
   top: 12px;
   right: 12px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 28px;
   height: 28px;
   background-color: var(--color-background);
   border-radius: 4px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   cursor: pointer;
-}
-
-.favorite-label:hover img {
-  width: 18px;
-  height: 18px;
-}
-
-.favorite-label:hover {
-  background-color: var(--color-border);
 }
 
 .favorite-label > img {
@@ -802,6 +827,24 @@ main {
   font-weight: 400;
 }
 
+/* 호버 효과 */
+.favorite-label:hover img {
+  width: 18px;
+  height: 18px;
+}
+
+.favorite-label:hover {
+  background-color: var(--color-border);
+}
+
+.mycontent-card:hover h3 {
+  text-decoration: underline;
+}
+
+.mycontent-card:hover {
+  cursor: pointer;
+}
+
 /* 마이페이지 계정 설정 */
 .account-setting {
   display: flex;
@@ -809,19 +852,6 @@ main {
   gap: 24px;
 }
 
-#profile-change {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 400;
-  font-size: 12px;
-  color: var(--color-secondary);
-  padding: 0 22px;
-}
-#profile-change img {
-  width: 15px;
-  height: 13.5px;
-}
 .account-setting > h3 {
   color: var(--color-text);
   font-size: 24px;
@@ -834,7 +864,6 @@ main {
   gap: 24px;
 
   padding: 24px 0;
-
   min-height: 64px;
   border-bottom: 1px solid var(--color-border);
 }
@@ -881,7 +910,7 @@ main {
 }
 
 .setting-footer {
-  color: #7e8289;
+  color: var(--color-gray-light);
   font-size: 11px;
   font-weight: 400;
 }
@@ -890,28 +919,10 @@ main {
   color: var(--color-secondary);
 }
 
+/* 호버 효과 */
 .setting-footer button:hover,
 .setting-row button:hover {
   font-weight: 500;
-  text-decoration: underline;
-}
-
-/* 호버 */
-.service-list a:hover {
-  font-weight: 700;
-  color: var(--color-text);
-  cursor: pointer;
-}
-
-.mycontent-card:hover h3 {
-  text-decoration: underline;
-}
-
-.mycontent-card:hover {
-  cursor: pointer;
-}
-
-.footer-menu a:hover {
   text-decoration: underline;
 }
 
@@ -920,10 +931,8 @@ main {
   /* 헤더 */
   .site-header {
     height: 120px;
-    border-bottom: 1px solid #303237;
-  }
+    border-bottom: 1px solid var(--color-border);
 
-  .site-header .container {
     padding: 0 24px;
     flex-wrap: wrap;
     gap: 0;
@@ -933,9 +942,11 @@ main {
     order: 1;
     width: 100%;
     height: 48px;
+
     display: flex;
     align-items: center;
   }
+
   .page-link {
     height: 72px;
     gap: 0;
@@ -956,15 +967,14 @@ main {
     border-radius: 8px;
   }
   .service-list {
-    font-family: "noto Sans KR", sans-serif;
     font-size: 13px;
     gap: 24px;
   }
 
-  /* 메인페이지 메인 윗부분 */
+  /* 메인페이지 메인 상단 */
   .top {
+    min-height: 0;
     padding: 260px 24px 36px;
-    background-color: var(--color-background);
   }
 
   .top-image {
@@ -974,19 +984,38 @@ main {
 
   .top-image img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 
   .top-image::after {
     background: linear-gradient(
-      to top,
-      var(--color-background),
-      transparent 50%
+      to bottom,
+      transparent 30%,
+      var(--color-background) 100%
     );
+  }
+
+  .top-content {
+    max-width: 100%;
+    gap: 20px;
   }
 
   .top-caption {
     display: none;
+  }
+
+  .content-2 h1 {
+    font-size: 40px;
+  }
+
+  .content-3 {
+    font-size: 11px;
+    flex-wrap: wrap;
+  }
+
+  .top-content > p {
+    font-size: 14px;
   }
 
   /* 메인페이지 콘텐츠박스 */
