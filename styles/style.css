@@ -733,9 +733,6 @@ main {
 }
 
 #mypage-profile .profile-note {
-}
-
-#mypage-profile .profile-note {
   display: flex;
   flex-direction: column;
   font-size: 13px;
@@ -844,6 +841,7 @@ main {
       align-items: center;
     }
   }
+
   /* 마이페이지 내가 찜한 콘텐츠 */
   .mycontent {
     display: flex;
@@ -880,6 +878,116 @@ main {
   }
 }
 /* 마이페이지 내가 찜한 콘텐츠 */
+.mycontent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mycontent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mycontent-header > h2 {
+  color: var(--color-text);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mycontent-header > span {
+  color: #7e8289;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.mycontent-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.mycontent-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.content-card-image {
+  position: relative;
+}
+
+.content-card-image > img {
+  display: block;
+  width: 100%;
+
+  border-radius: 4px;
+}
+
+.content-card-image > .favorite-label {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 28px;
+  height: 28px;
+  background-color: var(--color-background);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.mycontent-card:hover h3 {
+  text-decoration: underline;
+}
+
+.favorite-label:hover {
+  background-color: var(--color-border);
+}
+
+.favorite-label > img {
+  width: 16px;
+  height: 16px;
+}
+
+.favorite-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.favorite-label img {
+  opacity: 0;
+}
+
+.favorite-input:checked + .favorite-label img {
+  opacity: 1;
+}
+
+.content-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.content-card-text h3 {
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.content-card-text span {
+  color: var(--color-secondary);
+  font-size: 11px;
+  font-weight: 400;
+}
 .mycontent {
   display: flex;
   flex-direction: column;
