@@ -164,7 +164,20 @@
 }
 
 .profile-name {
+  width: auto;
+  height: auto;
+  white-space: nowrap;
+}
+
+.profile-bio {
+  width: 100%;
+  height: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
   font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: #acaeb3;
 }
 
 .manage-button {
