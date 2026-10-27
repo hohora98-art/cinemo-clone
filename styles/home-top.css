@@ -170,12 +170,22 @@
   font-weight: 400;
 }
 
-.content-4 button:hover span {
-  font-weight: 900;
+.content-4 button:first-child:hover {
+  background-color: #ee7358;
+  font-weight: 800;
+}
+
+.content-4 button:last-child:hover {
+  background-color: #1d1d1d;
+  font-weight: 800;
 }
 
 .card:hover .first {
   text-decoration: underline;
+}
+
+.card:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

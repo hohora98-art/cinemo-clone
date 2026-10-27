@@ -406,10 +406,15 @@ main {
 .service-list li:hover {
   font-weight: 700;
   color: var(--color-text);
+  cursor: pointer;
 }
 
 .mycontent-card:hover h3 {
   text-decoration: underline;
+}
+
+.mycontent-card:hover {
+  cursor: pointer;
 }
 
 /* 반응형 */
