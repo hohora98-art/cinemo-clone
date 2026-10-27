@@ -81,10 +81,6 @@ main {
   display: flex;
   align-items: center;
 }
-.service-list {
-  display: flex;
-  gap: 32px;
-}
 .site-header {
   height: 88px;
   background-color: #101113;
@@ -105,6 +101,7 @@ main {
   font-size: 14px;
   color: #acaeb3;
   font-weight: 400;
+  white-space: nowrap;
 }
 .mypage-link {
   margin-left: auto;
@@ -112,6 +109,7 @@ main {
   align-items: center;
   gap: 12px;
   font-size: 14px;
+  white-space: nowrap;
 }
 .service-list .home {
   color: #f3f1ed;
