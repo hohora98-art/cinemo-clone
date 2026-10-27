@@ -256,7 +256,7 @@ main {
   border-radius: 4px;
 }
 
-.content-card-image > button {
+.content-card-image > .favorite-label {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -269,16 +269,37 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  cursor: pointer;
 }
 
-.content-card-image > button:hover img {
+.favorite-label:hover img {
   width: 18px;
   height: 18px;
 }
 
-.content-card-image > button > img {
+.favorite-label:hover {
+  background-color: var(--color-border);
+}
+
+.favorite-label > img {
   width: 16px;
   height: 16px;
+}
+
+.favorite-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.favorite-label img {
+  opacity: 0;
+}
+
+.favorite-input:checked + .favorite-label img {
+  opacity: 1;
 }
 
 .content-card-text {
@@ -428,6 +449,16 @@ main {
 
 /* 반응형 */
 @media (max-width: 768px) {
+  .mypage-main {
+    gap: 36px;
+    padding: 36px 24px 40px;
+  }
+
+  .site-footer {
+    gap: 20px;
+    padding: 32px 24px 32px;
+  }
+
   .card-container {
     grid-template-columns: repeat(4, 240px);
     gap: 16px;
