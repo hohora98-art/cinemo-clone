@@ -726,6 +726,25 @@ main {
   align-items: center;
   gap: 12px;
   margin: 0;
+}
+
+#mypage-profile .profile-info {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+#mypage-profile .profile-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#mypage-profile .profile-text-wrap h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
   font-weight: 700;
   font-size: 28px;
   font-size: 28px;
