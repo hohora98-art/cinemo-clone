@@ -72,6 +72,10 @@ main {
 
 /* 푸터 */
 .site-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
   height: 166px;
   padding: 40px 64px;
 
@@ -92,7 +96,6 @@ main {
 }
 
 .footer-notice {
-  padding: 20px 0 0;
   line-height: 20px;
 }
 
@@ -358,122 +361,58 @@ main {
 
 /* 마이페이지 메인 */
 .mypage-main {
-  flex: 1;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   gap: 56px;
+
+  flex: 1;
   padding: 56px 64px 64px;
+
   background-color: var(--color-background);
 }
+
 .mypage-big .mycinemo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   height: 100%;
 
-  font-family: "inter", sans-serif;
-  font-weight: 400;
-  font-size: 11px;
   color: var(--color-warm-coral);
-}
-.mypage-big h2 {
-  font-family: "noto Sans KR", sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  color: var(--color-text);
-}
-.mypage-big p {
-  font-family: "noto Sans KR", sans-serif;
+  font-size: 11px;
   font-weight: 400;
-  font-size: 15px;
+}
+
+.mypage-big h2 {
+  color: var(--color-text);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.mypage-big p {
   color: var(--color-secondary);
+  font-size: 15px;
+  font-weight: 400;
   line-height: 1.7em;
 }
 
 #mypage-profile {
-  background-color: var(--color-surface);
   display: flex;
-  gap: 32px;
-  padding: 32px;
   justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+
+  padding: 32px;
   flex-wrap: wrap;
-  flex-direction: row;
-  color: #f3f1ed;
-  font-family: "noto Sans KR", sans-serif;
-}
 
-#mypage-profile .profile-info {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-#mypage-profile .profile-text-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-#mypage-profile .profile-text-wrap h3 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0;
-}
-
-#mypage-profile .profile-info {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-#mypage-profile .profile-text-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-#mypage-profile .profile-text-wrap h3 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0;
-  font-weight: 700;
-  font-size: 28px;
-  font-size: 28px;
   color: var(--color-text);
+  background-color: var(--color-surface);
 }
 
-#mypage-profile .profile-note {
+#mypage-profile .profile-info {
   display: flex;
-  flex-direction: column;
-  font-size: 13px;
-}
-
-#mypage-profile .profile {
-  font-size: 11px;
-  font-weight: 400;
-  color: #f28d77;
-  margin: 0;
-}
-
-.profile-change img {
-  width: 14px;
-  height: 14px;
-  flex-direction: column;
-  font-size: 13px;
-}
-
-#mypage-profile .profile {
-  font-size: 11px;
-  font-weight: 400;
-  color: #f28d77;
-  margin: 0;
-}
-
-.profile-change img {
-  width: 14px;
-  height: 14px;
+  align-items: center;
+  gap: 28px;
 }
 
 #mypage-profile .profile-avatar {
@@ -483,76 +422,68 @@ main {
   object-fit: cover;
 }
 
-.profile-change {
-  #mypage-profile .profile-avatar {
-    width: 88px;
-    height: 88px;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-
-  .profile-change {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: 400;
-    font-size: 12px;
-    color: var(--color-secondary);
-    padding: 15.5px 22px;
-    line-height: 1;
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    align-self: center;
-  }
-
-  .profile-text-wrap .together {
-    font-size: 11px;
-  }
-
-  .profile-change img {
-    width: 14px;
-    height: 14px;
-  }
-
-  .date {
-    display: none;
-  }
-
-  /* 마이페이지 내가 찜한 콘텐츠 */
-  .mycontent {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .profile-change img {
-    display: none;
-  }
-
-  #mypage-profile .profile-change {
-    margin-left: auto;
-    align-self: flex-end;
-    font-size: 13px;
-    font-weight: 700;
-  }
-
-  .together {
-    display: none;
-  }
-
-  .date {
-    display: block;
-    font-size: 11px;
-    color: #7e8289;
-  }
-
-  .profile-info-buttom-layout {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    align-items: center;
-  }
+#mypage-profile .profile-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
+
+#mypage-profile .profile-text-wrap h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+
+  color: var(--color-text);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#mypage-profile .profile {
+  color: var(--color-warm-coral);
+  font-size: 11px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.profile-text-wrap p {
+  color: var(--color-secondary);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.profile-text-wrap .together {
+  color: var(--color-gray-light);
+  font-size: 11px;
+}
+
+.profile-change {
+  width: auto;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+
+  padding: 0 22px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.profile-change img {
+  width: 18px;
+  height: 18px;
+}
+
+.date {
+  display: none;
+}
+
 /* 마이페이지 내가 찜한 콘텐츠 */
 .mycontent {
   display: flex;
@@ -664,330 +595,12 @@ main {
   font-size: 11px;
   font-weight: 400;
 }
-.mycontent {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-#mypage-profile .profile-text-wrap h3 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0;
-  font-weight: 700;
-  font-size: 28px;
-  color: var(--color-text);
-}
-
-#mypage-profile .profile-note {
-  display: flex;
-  flex-direction: column;
-  font-size: 13px;
-}
-
-#mypage-profile .profile {
-  font-size: 11px;
-  font-weight: 400;
-  color: #f28d77;
-  margin: 0;
-}
-
-.profile-change img {
-  width: 14px;
-  height: 14px;
-}
-
-#mypage-profile .profile-avatar {
-  width: 88px;
-  height: 88px;
-  border-radius: 8px;
-  object-fit: cover;
-}
 
 /* 마이페이지 계정 설정 */
 .account-setting {
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-.profile-change {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 400;
-  font-size: 12px;
-  color: var(--color-secondary);
-  padding: 15.5px 22px;
-  line-height: 1;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  align-self: center;
-}
-
-.profile-text-wrap .together {
-  font-size: 11px;
-}
-
-.profile-change img {
-  width: 14px;
-  height: 14px;
-}
-
-.date {
-  display: none;
-}
-
-/* 프로필페이지 */
-.header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 88px;
-  padding: 0 64px;
-  gap: 56px;
-  background-color: #101113;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #f5f5f5;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.brand-mark {
-  display: block;
-  width: 7px;
-  height: 22px;
-  background-color: #f28d77;
-  flex-shrink: 0;
-}
-
-.wordmark {
-  font-family: Inter, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  font-style: bold;
-  line-height: 100%;
-  letter-spacing: 3%;
-  color: #f5f5f5;
-  white-space: nowrap;
-}
-
-.profile-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  padding: 116px 64px 120px;
-  gap: 56px;
-  background-color: #101113;
-  text-align: center;
-}
-
-.eyebrow {
-  margin: 0;
-  width: 92px;
-  height: 12px;
-  font-family: Inter, sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 0.03em;
-  color: #f28d77;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.profile-page h1 {
-  width: 100%;
-  height: 48px;
-  margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 100%;
-  letter-spacing: -0.1em;
-  color: #f3f1ed;
-  text-align: center;
-}
-
-.description {
-  width: 100%;
-  height: 27px;
-  margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 180%;
-  letter-spacing: 0;
-  color: #acaeb3;
-  text-align: center;
-}
-
-.profile-list {
-  display: flex;
-  flex-direction: row;
-  width: 728px;
-  height: auto;
-  justify-content: center;
-  gap: 40px;
-}
-
-.profile-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 152px;
-  height: auto;
-  gap: 16px;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: #f5f5f5;
-  cursor: pointer;
-}
-
-.profile-avatar {
-  display: flex;
-  width: 100%;
-  aspect-ratio: 1;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  color: #f5f5f5;
-  font-size: 36px;
-  font-weight: 300;
-}
-
-.profile-introduction {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  gap: 16px;
-  align-items: center;
-  text-align: center;
-}
-
-.profile-y .profile-avatar {
-  background-color: #779598;
-}
-
-.profile-j .profile-avatar {
-  background-color: #c6ac84;
-}
-
-.profile-m .profile-avatar {
-  background-color: #9692af;
-}
-
-.profile-g .profile-avatar {
-  background-color: #7c8d75;
-}
-
-.profile-name {
-  width: auto;
-  height: auto;
-  white-space: nowrap;
-}
-
-.profile-bio {
-  width: 100%;
-  height: 20px;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0;
-  color: #acaeb3;
-}
-
-.manage-button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 138px;
-  height: 48px;
-  margin-top: 30px;
-  padding: 0 22px;
-  gap: 8px;
-  border: 1px solid #303237;
-  border-radius: 4px;
-  background: transparent;
-  color: #f3f1ed;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 100%;
-  letter-spacing: 0;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.manage-button .edit-icon {
-  display: block;
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.footer-message {
-  width: 100%;
-  height: 13px;
-  margin: 0;
-  background-color: #101113;
-  color: #7e8289;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 13px;
-  letter-spacing: 0;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  #mypage-profile {
-    padding: 24px;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .profile-change img {
-    display: none;
-  }
-
-  #mypage-profile .profile-change {
-    margin-left: auto;
-    align-self: flex-end;
-    font-size: 13px;
-    font-weight: 700;
-  }
-
-  .together {
-    display: none;
-  }
-
-  .date {
-    display: block;
-    font-size: 11px;
-    color: #7e8289;
-  }
-
-  .profile-info-buttom-layout {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 
 .account-setting > h3 {
@@ -1062,6 +675,232 @@ main {
 .setting-row button:hover {
   font-weight: 500;
   text-decoration: underline;
+}
+
+/* 프로필페이지 */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+
+  width: 100%;
+  height: 88px;
+  padding: 0 64px;
+
+  background-color: var(--color-background);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: block;
+  flex-shrink: 0;
+
+  width: 7px;
+  height: 22px;
+
+  background-color: var(--color-warm-coral);
+}
+
+.wordmark {
+  color: #f5f5f5;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 3%;
+  white-space: nowrap;
+}
+
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+
+  width: 100%;
+  height: auto;
+  padding: 116px 64px 120px;
+
+  background-color: var(--color-background);
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0;
+  width: 92px;
+  height: 12px;
+
+  color: var(--color-warm-coral);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.profile-page h1 {
+  width: 100%;
+  height: 48px;
+  margin: 0;
+
+  color: var(--color-text);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.1em;
+  text-align: center;
+}
+
+.description {
+  width: 100%;
+  height: 27px;
+  margin: 0;
+
+  color: var(--color-secondary);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.profile-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+
+  width: 728px;
+  height: auto;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  width: 152px;
+  height: auto;
+
+  background: transparent;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+
+.profile-avatar {
+  width: 100%;
+  aspect-ratio: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #f5f5f5;
+  font-size: 36px;
+  font-weight: 300;
+  border-radius: 4px;
+}
+
+.profile-introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  width: 100%;
+  height: auto;
+
+  text-align: center;
+}
+
+.profile-y .profile-avatar {
+  background-color: #779598;
+}
+
+.profile-j .profile-avatar {
+  background-color: #c6ac84;
+}
+
+.profile-m .profile-avatar {
+  background-color: #9692af;
+}
+
+.profile-g .profile-avatar {
+  background-color: #7c8d75;
+}
+
+.profile-name {
+  width: auto;
+  height: auto;
+  white-space: nowrap;
+}
+
+.profile-bio {
+  width: 100%;
+  height: 20px;
+
+  color: var(--color-secondary);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+.manage-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  width: 138px;
+  height: 48px;
+  margin-top: 30px;
+  padding: 0 22px;
+
+  border: 1px solid #303237;
+  border-radius: 4px;
+  background: transparent;
+  color: #f3f1ed;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.manage-button .edit-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.footer-message {
+  width: 100%;
+  height: 13px;
+  margin: 0;
+
+  color: var(--color-gray-light);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0;
+  text-align: center;
+  background-color: var(--color-background);
 }
 
 /* 반응형 */
@@ -1179,58 +1018,13 @@ main {
     display: none;
   }
 
-  /* 마이페이지 메인 */
+  /* 마이페이지 레이아웃 */
   .mypage-main {
     gap: 36px;
     padding: 36px 24px 40px;
   }
 
-  /* 마이페이지 내가찜한콘텐츠 */
-  .mycontent-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px 16px;
-  }
-
-  /* 마이페이지 계정 설정 */
-  .setting-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 20px 0;
-  }
-
-  .setting-row div {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  /* 푸터 */
-  .site-footer {
-    gap: 20px;
-    padding: 32px 24px 32px;
-  }
-
-  .main-footer {
-    height: auto;
-    padding: 32px 24px;
-  }
-
-  .main-footer .footer-menu {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .main-footer .footer-notice {
-    line-height: 1.8;
-  }
-
-  .main-footer .footer-notice p {
-    display: block;
-  }
-
-  /* 마이페이지 메인 */
+  /* 마이페이지 프로필 */
   #mypage-profile {
     padding: 24px;
     flex-direction: column;
@@ -1258,78 +1052,40 @@ main {
     color: #7e8289;
   }
 
+  .profile-info {
+    align-self: flex-start;
+  }
+
   .profile-info-buttom-layout {
+    width: 100%;
+
     display: flex;
-    gap: 10px;
     justify-content: space-between;
     align-items: center;
   }
-}
 
-@media (max-width: 768px) {
-  .site-header {
-    height: 120px;
-    border-bottom: 1px solid #303237;
+  /* 마이페이지 내가찜한콘텐츠 */
+  .mycontent-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
   }
 
-  .site-header .container {
-    padding: 0 24px;
-    flex-wrap: wrap;
-    gap: 0;
-  }
-
-  .site-header nav {
-    order: 1;
-    width: 100%;
-    height: 48px;
+  /* 마이페이지 계정 설정 */
+  .setting-row {
     display: flex;
-    align-items: center;
-  }
-  .mypage-link {
-    height: 72px;
-    gap: 0;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 20px 0;
   }
 
-  .mypage-text {
-    display: none;
+  .setting-row div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
   }
 
-  .site-header .container a img {
-    width: 93px;
-    height: 23px;
-  }
-
-  .mypage-link img {
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-  }
-  .service-list {
-    font-family: "noto Sans KR", sans-serif;
-    font-size: 13px;
-    gap: 24px;
-  }
-
-  .main-footer {
-    height: auto;
-    padding: 32px 24px;
-  }
-
-  .main-footer .footer-menu {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .main-footer .footer-notice {
-    line-height: 1.8;
-  }
-
-  .main-footer .footer-notice span {
-    display: block;
-  }
-}
-
-@media (max-width: 600px) {
+  /* 프로필페이지 */
   .header {
     width: 100%;
     height: auto;
@@ -1419,5 +1175,27 @@ main {
   .manage-button .edit-icon {
     width: 18px;
     height: 18px;
+  }
+
+  /* 푸터 */
+  .site-footer {
+    gap: 20px;
+    padding: 32px 24px 32px;
+
+    height: auto;
+    padding: 32px 24px;
+  }
+
+  .site-footer .footer-menu {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .site-footer .footer-notice {
+    line-height: 1.8;
+  }
+
+  .site-footer .footer-notice span {
+    display: block;
   }
 }
