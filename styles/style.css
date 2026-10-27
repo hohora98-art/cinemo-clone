@@ -328,13 +328,18 @@ main {
 
 .setting-row {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
   gap: 24px;
 
   padding: 24px 0;
 
   min-height: 64px;
   border-bottom: 1px solid var(--color-border);
+}
+
+.setting-row div {
+  display: flex;
+  gap: 24px;
 }
 
 .row-first {
@@ -417,6 +422,10 @@ main {
   cursor: pointer;
 }
 
+.footer-menu li:hover {
+  text-decoration: underline;
+}
+
 /* 반응형 */
 @media (max-width: 768px) {
   .card-container {
@@ -431,6 +440,12 @@ main {
     gap: 16px;
     padding: 0 24px;
     overflow-x: auto;
+  }
+
+  .mycontent-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
   }
 
   .section-header {
@@ -496,6 +511,19 @@ main {
     gap: 24px;
   }
 
+  .setting-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 20px 0;
+  }
+
+  .setting-row div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
   .main-footer {
     height: auto;
     padding: 32px 24px;
@@ -511,26 +539,6 @@ main {
   }
 
   .main-footer .footer-notice span {
-    display: block;
-  }
-}
-
-@media (max-width: 768px) {
-  .mypage-footer {
-    height: auto;
-    padding: 32px 24px;
-  }
-
-  .mypage-footer .footer-menu {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .mypage-footer .footer-notice {
-    line-height: 1.8;
-  }
-
-  .mypage-footer .footer-notice span {
     display: block;
   }
 }
