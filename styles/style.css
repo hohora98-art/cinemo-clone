@@ -705,155 +705,55 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
-}
-#mypage-profile img {
-  width: 88px;
-  height: 88px;
-  border-radius: 8%;
-}
-#mypage-profile h3 {
+  color: #f3f1ed;
   font-family: "noto Sans KR", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: var(--color-text);
-  display: flex;
-  align-items: flex-start;
 }
 
-#profile-change {
+#mypage-profile .profile-info {
   display: flex;
   align-items: center;
+  gap: 28px;
+}
+
+#mypage-profile .profile-text-wrap {
+  display: flex;
+  flex-direction: column;
   gap: 8px;
-  font-weight: 400;
-  font-size: 12px;
-  color: var(--color-secondary);
-  padding: 0 22px;
-}
-#profile-change img {
-  width: 15px;
-  height: 13.5px;
 }
 
-/* 마이페이지 내가 찜한 콘텐츠 */
-.mycontent {
+#mypage-profile .profile-text-wrap h3 {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.mycontent-header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.mycontent-header > h2 {
-  color: var(--color-text);
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.mycontent-header > span {
-  color: var(--color-gray-light);
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.mycontent-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
-.mycontent-card {
-  display: flex;
-  flex-direction: column;
   gap: 12px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--color-text);
 }
 
-.content-card-image {
-  position: relative;
-}
-
-.content-card-image > img {
-  display: block;
-  width: 100%;
-
-  border-radius: 4px;
-}
-
-.content-card-image > .favorite-label {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 28px;
-  height: 28px;
-  background-color: var(--color-background);
-  border-radius: 4px;
-
-  cursor: pointer;
-}
-
-.favorite-label > img {
-  width: 16px;
-  height: 16px;
-}
-
-.favorite-input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
-
-.favorite-label img {
-  opacity: 0;
-}
-
-.favorite-input:checked + .favorite-label img {
-  opacity: 1;
-}
-
-.content-card-text {
+#mypage-profile .profile-note {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 4px;
+  font-size: 13px;
 }
 
-.content-card-text h3 {
-  color: var(--color-text);
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.content-card-text span {
-  color: var(--color-secondary);
+#mypage-profile .profile {
   font-size: 11px;
   font-weight: 400;
+  color: #f28d77;
+  margin: 0;
 }
 
-/* 호버 효과 */
-.favorite-label:hover img {
-  width: 18px;
-  height: 18px;
+.profile-change img {
+  width: 14px;
+  height: 14px;
 }
 
-.favorite-label:hover {
-  background-color: var(--color-border);
-}
-
-.mycontent-card:hover h3 {
-  text-decoration: underline;
-}
-
-.mycontent-card:hover {
-  cursor: pointer;
+#mypage-profile .profile-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 /* 마이페이지 계정 설정 */
@@ -861,6 +761,69 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.profile-change {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-secondary);
+  padding: 15.5px 22px;
+  line-height: 1;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  align-self: center;
+}
+
+.profile-text-wrap .together {
+  font-size: 11px;
+}
+
+.profile-change img {
+  width: 14px;
+  height: 14px;
+}
+
+.date {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #mypage-profile {
+    padding: 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .profile-change img {
+    display: none;
+  }
+
+  #mypage-profile .profile-change {
+    margin-left: auto;
+    align-self: flex-end;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .together {
+    display: none;
+  }
+
+  .date {
+    display: block;
+    font-size: 11px;
+    color: #7e8289;
+  }
+
+  .profile-info-buttom-layout {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .account-setting > h3 {
@@ -1100,6 +1063,69 @@ main {
   }
 
   .main-footer .footer-notice p {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    height: 120px;
+    border-bottom: 1px solid #303237;
+  }
+
+  .site-header .container {
+    padding: 0 24px;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .site-header nav {
+    order: 1;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+  }
+  .mypage-link {
+    height: 72px;
+    gap: 0;
+  }
+
+  .mypage-text {
+    display: none;
+  }
+
+  .site-header .container a img {
+    width: 93px;
+    height: 23px;
+  }
+
+  .mypage-link img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+  .service-list {
+    font-family: "noto Sans KR", sans-serif;
+    font-size: 13px;
+    gap: 24px;
+  }
+
+  .main-footer {
+    height: auto;
+    padding: 32px 24px;
+  }
+
+  .main-footer .footer-menu {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .main-footer .footer-notice {
+    line-height: 1.8;
+  }
+
+  .main-footer .footer-notice span {
     display: block;
   }
 }
