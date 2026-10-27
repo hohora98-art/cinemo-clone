@@ -34,48 +34,57 @@
           <h2>마이페이지</h2>
           <p>취향을 모으고, 나만의 시간을 이어가세요.</p>
         </div>
-        <div id="mypage-profile">
-          <span
-            ><h3><img src="assets/avatar-mint.png" alt="욜로" />욜로</h3>
-            <a>기본 프로필</a>
-            <h4>나만의 영화 노트</h4>
-            <p>2026년 10월부터 함께하는 중</p></span
-          >
-          <span>
-            <h3>
-              <img src="assets/vector-1.svg" alt="프로필 변경" />프로필 변경
-            </h3>
-          </span>
-        </div>
         <div>
-          <div class="section-header">
-            <p class="title">오늘,새로운 세계로</p>
-            <p class="story">4편의 이야기</p>
+          <div id="mypage-profile">
+            <div class="profile-info">
+              <img
+                src="assets/avatar-mint.png"
+                alt="욜로"
+                class="profile-avatar"
+              />
+
+              <div class="profile-text-wrap">
+                <h3>
+                  <span>욜로</span>
+                  <span class="profile">기본프로필</span>
+                </h3>
+                <div class="profile-note">
+                  <p>나만의 영화 노트</p>
+                  <p class="together">2026년 10월부터 함께하는 중</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile-info-buttom-layout">
+              <div class="date">
+                <span>2016.10 가입</span>
+              </div>
+              <a href="./profile.html" class="profile-change" type="button">
+                <img src="assets/vector-1.svg" alt="프로필 변경" />
+                <span>프로필 변경</span>
+              </a>
+            </div>
           </div>
-          <div>
-            <p class="title-second">낯선 풍경 속에서 시작되는 네 편의 이야기</p>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img src="./assets/Image quiet-orbit.jpg" alt="" />
+            <p class="first">고요의 궤도</p>
+            <p class="second">SF • 미스터리 • 15+</p>
           </div>
-          <div class="card-container">
-            <div class="card">
-              <img src="./assets/Image quiet-orbit.jpg" alt="" />
-              <p class="first">고요의 궤도</p>
-              <p class="second">SF • 미스터리 • 15+</p>
-            </div>
-            <div class="card">
-              <img src="./assets/Image last-platform.jpg" alt="" />
-              <p class="first">마지막 승강장</p>
-              <p class="second">드라마 • 12+</p>
-            </div>
-            <div class="card">
-              <img src="./assets/Image blue-hour.jpg" alt="" />
-              <p class="first">파란 시간</p>
-              <p class="second">로맨스 • 드라마 • 12+</p>
-            </div>
-            <div class="card">
-              <img src="./assets/Image forest-letter.jpg" alt="" />
-              <p class="first">숲에서 온 편지</p>
-              <p class="second">판타지 • 드라마 • 전체</p>
-            </div>
+          <div class="card">
+            <img src="./assets/Image last-platform.jpg" alt="" />
+            <p class="first">마지막 승강장</p>
+            <p class="second">드라마 • 12+</p>
+          </div>
+          <div class="card">
+            <img src="./assets/Image blue-hour.jpg" alt="" />
+            <p class="first">파란 시간</p>
+            <p class="second">로맨스 • 드라마 • 12+</p>
+          </div>
+          <div class="card">
+            <img src="./assets/Image forest-letter.jpg" alt="" />
+            <p class="first">숲에서 온 편지</p>
+            <p class="second">판타지 • 드라마 • 전체</p>
           </div>
         </div>
         <section class="account-setting">

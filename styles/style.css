@@ -222,17 +222,55 @@ main {
   display: flex;
   gap: 32px;
   padding: 48px 0;
+  color: #f3f1ed;
+  font-family: "noto Sans KR", sans-serif;
 }
-#mypage-profile img {
+
+#mypage-profile .profile-info {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+#mypage-profile .profile-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#mypage-profile .profile-text-wrap h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--color-text);
+}
+
+#mypage-profile .profile-note {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+#mypage-profile .profile {
+  font-size: 11px;
+  font-weight: 400;
+  color: #f28d77;
+  margin: 0;
+}
+
+.profile-change img {
+  width: 14px;
+  height: 14px;
+}
+
+#mypage-profile .profile-avatar {
   width: 88px;
   height: 88px;
-  border-radius: 8%;
-}
-#mypage-profile h3 {
-  font-family: "noto Sans KR", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: var(--color-text);
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 /* 마이페이지 계정 설정 */
@@ -240,6 +278,69 @@ main {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.profile-change {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-secondary);
+  padding: 15.5px 22px;
+  line-height: 1;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  align-self: center;
+}
+
+.profile-text-wrap .together {
+  font-size: 11px;
+}
+
+.profile-change img {
+  width: 14px;
+  height: 14px;
+}
+
+.date {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #mypage-profile {
+    padding: 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .profile-change img {
+    display: none;
+  }
+
+  #mypage-profile .profile-change {
+    margin-left: auto;
+    align-self: flex-end;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .together {
+    display: none;
+  }
+
+  .date {
+    display: block;
+    font-size: 11px;
+    color: #7e8289;
+  }
+
+  .profile-info-buttom-layout {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .account-setting > h3 {
@@ -309,4 +410,67 @@ main {
 .setting-row button:hover {
   font-weight: 500;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    height: 120px;
+    border-bottom: 1px solid #303237;
+  }
+
+  .site-header .container {
+    padding: 0 24px;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .site-header nav {
+    order: 1;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+  }
+  .mypage-link {
+    height: 72px;
+    gap: 0;
+  }
+
+  .mypage-text {
+    display: none;
+  }
+
+  .site-header .container a img {
+    width: 93px;
+    height: 23px;
+  }
+
+  .mypage-link img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+  .service-list {
+    font-family: "noto Sans KR", sans-serif;
+    font-size: 13px;
+    gap: 24px;
+  }
+
+  .main-footer {
+    height: auto;
+    padding: 32px 24px;
+  }
+
+  .main-footer .footer-menu {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .main-footer .footer-notice {
+    line-height: 1.8;
+  }
+
+  .main-footer .footer-notice span {
+    display: block;
+  }
 }
