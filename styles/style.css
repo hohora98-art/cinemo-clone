@@ -642,7 +642,7 @@ main {
 }
 
 /* 호버 효과 */
-.card:hover .first {
+.card:hover h3 {
   text-decoration: underline;
 }
 
@@ -988,9 +988,9 @@ main {
 
   .top-image::after {
     background: linear-gradient(
-      to bottom,
-      transparent 30%,
-      var(--color-background) 100%
+      to top,
+      var(--color-background),
+      transparent 50%
     );
   }
 
