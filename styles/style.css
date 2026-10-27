@@ -705,35 +705,119 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
-}
-#mypage-profile img {
-  width: 88px;
-  height: 88px;
-  border-radius: 8%;
-}
-#mypage-profile h3 {
+  color: #f3f1ed;
   font-family: "noto Sans KR", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: var(--color-text);
-  display: flex;
-  align-items: flex-start;
 }
 
-#profile-change {
+#mypage-profile .profile-info {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+#mypage-profile .profile-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#mypage-profile .profile-text-wrap h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--color-text);
+}
+
+#mypage-profile .profile-note {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+#mypage-profile .profile {
+  font-size: 11px;
+  font-weight: 400;
+  color: #f28d77;
+  margin: 0;
+}
+
+.profile-change img {
+  width: 14px;
+  height: 14px;
+}
+
+#mypage-profile .profile-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.profile-change {
   display: flex;
   align-items: center;
   gap: 8px;
   font-weight: 400;
   font-size: 12px;
   color: var(--color-secondary);
-  padding: 0 22px;
-}
-#profile-change img {
-  width: 15px;
-  height: 13.5px;
+  padding: 15.5px 22px;
+  line-height: 1;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  align-self: center;
 }
 
+.profile-text-wrap .together {
+  font-size: 11px;
+}
+
+.profile-change img {
+  width: 14px;
+  height: 14px;
+}
+
+.date {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #mypage-profile {
+    padding: 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .profile-change img {
+    display: none;
+  }
+
+  #mypage-profile .profile-change {
+    margin-left: auto;
+    align-self: flex-end;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .together {
+    display: none;
+  }
+
+  .date {
+    display: block;
+    font-size: 11px;
+    color: #7e8289;
+  }
+
+  .profile-info-buttom-layout {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 /* 마이페이지 내가 찜한 콘텐츠 */
 .mycontent {
   display: flex;
