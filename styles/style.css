@@ -643,7 +643,7 @@ main {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 22px;
+  padding: 0 22px;
 
   height: 48px;
   width: auto;
@@ -952,7 +952,7 @@ main {
   cursor: pointer;
 }
 
-.favorite-label > img {
+.favorite-label > svg {
   width: 16px;
   height: 16px;
 }
@@ -964,11 +964,11 @@ main {
   opacity: 0;
 }
 
-.favorite-label img {
+.favorite-label svg {
   opacity: 0;
 }
 
-.favorite-input:checked + .favorite-label img {
+.favorite-input:checked + .favorite-label svg {
   opacity: 1;
 }
 
@@ -1000,7 +1000,7 @@ main {
   background-color: var(--color-border);
 }
 
-.favorite-label:hover img {
+.favorite-label:hover svg {
   width: 18px;
   height: 18px;
 }
