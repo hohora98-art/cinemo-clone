@@ -1103,13 +1103,14 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 24px;
+  line-height: 16px;
 
   padding: 24px 0;
   min-height: 64px;
   border-bottom: 1px solid var(--color-border);
 }
 
-.setting-row div {
+.setting-row dl {
   display: flex;
   gap: 24px;
 }
@@ -1567,6 +1568,15 @@ main {
   }
 
   /* 마이페이지 계정 설정 */
+  .account-setting {
+    gap: 16px;
+  }
+
+  .account-setting > h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
   .setting-row {
     display: flex;
     justify-content: space-between;
@@ -1574,7 +1584,7 @@ main {
     padding: 20px 0;
   }
 
-  .setting-row div {
+  .setting-row dl {
     display: flex;
     flex-direction: column;
     gap: 6px;
