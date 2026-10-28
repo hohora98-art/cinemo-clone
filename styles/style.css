@@ -486,6 +486,12 @@ main {
   display: none;
 }
 
+/* 호버 효과 */
+.profile-change:hover {
+  background-color: var(--color-border);
+  border-color: var(--color-secondary);
+}
+
 /* 마이페이지 내가 찜한 콘텐츠 */
 .mycontent {
   display: flex;
