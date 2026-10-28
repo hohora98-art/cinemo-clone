@@ -875,6 +875,33 @@ main {
   display: none;
 }
 
+.avatar-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-avatar {
+  display: block;
+  width: 100px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.avatar-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 42px;
+  font-weight: 400;
+  width: auto;
+  height: auto;
+  font-style: normal;
+  text-align: center;
+}
+
 /* 호버 효과 */
 .profile-change:hover {
   background-color: var(--color-border);
