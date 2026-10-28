@@ -88,6 +88,40 @@
   text-align: center;
 }
 
+/* 프로필 배경 이미지와 이니셜 */
+.profile-avatar-wrap {
+  position: relative;
+  display: block;
+}
+
+.profile-avatar-wrap .profile-avatar {
+  display: block;
+}
+
+.profile-initial {
+  position: absolute;
+  top: 48%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+
+  width: 65px;
+  height: 88px;
+
+  font-family: Inter, sans-serif;
+  font-size: 72.96px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: -0.304em;
+  color: #f3f1ed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+}
+
 body {
   position: relative;
   min-height: 100vh;
