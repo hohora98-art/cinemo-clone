@@ -738,28 +738,6 @@ main {
 }
 
 /* 메인페이지 콘텐츠부분 */
-.section-header {
-  display: flex;
-  justify-content: space-between;
-
-  padding: 0 64px;
-  margin-top: 48px;
-
-  color: var(--color-text);
-}
-
-.section-header h3 {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.section-header span {
-  display: flex;
-  align-items: center;
-
-  font-size: 12px;
-  font-weight: 400;
-}
 
 .title-second {
   padding: 0 64px;
@@ -770,34 +748,82 @@ main {
   font-weight: 400;
 }
 
+.card-layout {
+  padding: 16px 64px 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.card-layout-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.section-header span {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-gray-light);
+}
+
+.card-section p {
+  color: var(--color-secondary);
+  font-size: 12px;
+  font-weight: 400;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+}
 
-  padding: 0 64px;
-  margin-top: 12px;
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .card img {
-  width: 100%;
+  width: 310px;
   height: auto;
 }
 
-.card h4 {
+.card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-title h4 {
   color: var(--color-text);
   font-size: 16px;
   font-weight: 500;
-
-  margin-top: 12px;
 }
 
-.card p {
-  color: var(--color-text);
+.card-title p {
+  color: var(--color-secondary);
   font-size: 11px;
   font-weight: 400;
-
-  margin-bottom: 64px;
 }
 
 /* 호버 효과 */
@@ -1487,16 +1513,47 @@ main {
   }
 
   /* 메인페이지 콘텐츠박스 */
+  .card-layout {
+    padding: 8px 0 40px;
+    gap: 36px;
+  }
+
+  .card-layout-section {
+    gap: 18px;
+  }
+
+  .card-section,
+  .card-container {
+    padding: 0 24px;
+  }
+
   .card-container {
     grid-template-columns: repeat(4, 240px);
     gap: 16px;
-    padding: 0 24px;
+    padding: 0 24px 24px;
     overflow-x: auto;
   }
 
-  .section-header {
-    padding: 0 24px;
-    margin-top: 24px;
+  .card-container::-webkit-scrollbar {
+    width: 96px;
+    height: 3px;
+  }
+
+  .card-container::-webkit-scrollbar-track {
+    background-color: var(--color-button-background);
+    margin: 0 24px;
+  }
+
+  .card-container::-webkit-scrollbar-thumb {
+    background-color: var(--color-gray-light);
+  }
+
+  .card-container::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-secondary);
+  }
+
+  .card-container::-webkit-scrollbar-thumb:active {
+    background-color: var(--color-secondary);
   }
 
   .title-second {
