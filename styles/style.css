@@ -438,13 +438,11 @@ main {
   font-weight: 700;
 }
 
-.page-link-wrap {
+.page-link-layout {
   margin-left: auto;
 }
 
 .page-link {
-  margin-left: auto;
-
   display: flex;
   align-items: center;
   gap: 12px;
@@ -458,10 +456,14 @@ main {
 }
 
 /* 호버 효과 */
-.service-list a:hover {
+.service-list li:hover {
   font-weight: 700;
   color: var(--color-text);
   cursor: pointer;
+}
+
+.page-link:hover {
+  color: var(--color-warm-coral);
 }
 
 /* 푸터 */
@@ -504,7 +506,7 @@ main {
 }
 
 /* 메인페이지 메인 윗부분 */
-.top {
+.top-layout {
   position: relative;
   min-height: 590px;
 
@@ -562,7 +564,7 @@ main {
   gap: 8px;
 }
 
-.content-1 {
+.content-label {
   display: flex;
   align-items: baseline;
   gap: 12px;
@@ -570,12 +572,12 @@ main {
   font-size: 12px;
 }
 
-.content-1 span {
+.content-label span {
   color: var(--color-warm-coral);
   font-weight: 500;
 }
 
-.content-1 span:first-child {
+.content-label span:first-child {
   display: inline-block;
   align-self: center;
 
@@ -585,32 +587,32 @@ main {
   background-color: var(--color-warm-coral);
 }
 
-.content-1 span:last-child {
+.content-label span:last-child {
   color: var(--color-secondary);
   font-size: 10px;
   font-weight: 400;
 }
 
-.content-2 {
+.content-title {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.content-2 h1 {
+.content-title h2 {
   color: var(--color-text);
   font-size: 64px;
   font-weight: 700;
   line-height: 1.2;
 }
 
-.content-2 span {
+.content-title span {
   color: var(--color-secondary);
   font-size: 11px;
   font-weight: 400;
 }
 
-.content-3 {
+.content-meta {
   display: flex;
   align-items: baseline;
   gap: 12px;
@@ -619,7 +621,7 @@ main {
   font-size: 12px;
 }
 
-.content-3 span:nth-child(2) {
+.content-meta span:nth-child(2) {
   font-size: 10px;
 }
 
@@ -631,13 +633,13 @@ main {
   overflow-wrap: break-word;
 }
 
-.content-4 {
+.content-buttons {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.content-4 button {
+.content-buttons button {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -651,17 +653,12 @@ main {
   font-weight: 700;
 }
 
-.content-4 button img {
-  width: 18px;
-  height: 18px;
-}
-
-.content-4 button:first-child {
+.content-buttons button:first-child {
   background-color: var(--color-warm-coral);
   color: var(--color-button-text);
 }
 
-.content-4 button:last-child {
+.content-buttons button:last-child {
   background-color: var(--color-button-background);
   color: var(--color-text);
 }
@@ -678,11 +675,11 @@ main {
   font-weight: 400;
 }
 /* 호버 효과 */
-.content-4 button:first-child:hover {
+.content-buttons button:first-child:hover {
   background-color: #ee7358;
 }
 
-.content-4 button:last-child:hover {
+.content-buttons button:last-child:hover {
   background-color: #1d1d1d;
 }
 
@@ -697,7 +694,7 @@ main {
   color: var(--color-text);
 }
 
-.section-header h2 {
+.section-header h3 {
   font-size: 24px;
   font-weight: 700;
 }
@@ -728,7 +725,12 @@ main {
   margin-top: 12px;
 }
 
-.card h3 {
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h4 {
   color: var(--color-text);
   font-size: 16px;
   font-weight: 500;
@@ -745,7 +747,7 @@ main {
 }
 
 /* 호버 효과 */
-.card:hover h3 {
+.card:hover h4 {
   text-decoration: underline;
 }
 
@@ -1356,7 +1358,7 @@ main {
   }
 
   /* 메인페이지 메인 상단 */
-  .top {
+  .top-layout {
     min-height: 0;
     padding: 260px 24px 36px;
   }
@@ -1389,11 +1391,11 @@ main {
     display: none;
   }
 
-  .content-2 h1 {
+  .content-title h2 {
     font-size: 40px;
   }
 
-  .content-3 {
+  .content-meta {
     font-size: 11px;
     flex-wrap: wrap;
   }
@@ -1423,6 +1425,11 @@ main {
 
   .section-header span {
     display: none;
+  }
+
+  .card img {
+    width: 240px;
+    height: auto;
   }
 
   /* 마이페이지 레이아웃 */
