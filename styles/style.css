@@ -51,6 +51,7 @@
 }
 
 .profile-page {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,11 +105,11 @@
   left: 42%;
   transform: translate(-50%, -50%);
 
-  width: 65px;
-  height: 88px;
+  width: 44px;
+  height: 79px;
 
   font-family: Inter, sans-serif;
-  font-size: 72.96px;
+  font-size: 65.28px;
   font-weight: 400;
   font-style: normal;
   line-height: 100%;
@@ -203,7 +204,13 @@ body {
 
 .profile-name {
   width: auto;
-  height: auto;
+  height: 22px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: 0;
   white-space: nowrap;
 }
 
@@ -252,7 +259,7 @@ body {
 .footer-message {
   display: block;
   position: absolute;
-  bottom: 100px;
+  bottom: 50px;
   left: 0;
   width: 100%;
   height: 13px;
@@ -1568,6 +1575,10 @@ main {
   }
 
   .footer-message {
+    display: block;
+    position: absolute;
+    bottom: 150px;
+    left: 0;
     width: 100%;
     height: 13px;
     margin: 0;
@@ -1595,12 +1606,12 @@ main {
   }
 
   .profile-page h1 {
-    width: 100%;
-    height: auto;
+    width: 342px;
+    height: 34px;
     font-size: 22px;
-    line-height: 1.4;
+    line-height: 34px;
     letter-spacing: 0;
-    overflow-wrap: anywhere;
+    text-align: center;
   }
 
   .description {
@@ -1625,17 +1636,22 @@ main {
     height: auto;
     min-width: 0;
     gap: 12px;
+    align-items: center;
   }
 
-  .profile-avatar {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1;
-    font-size: 32px;
+  .profile-list .profile-avatar {
+    width: 136px;
+    height: 136px;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1;
   }
 
   .profile-name {
-    font-size: 12px;
+    width: auto;
+    height: 22px;
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap;
   }
 
   .manage-button {
