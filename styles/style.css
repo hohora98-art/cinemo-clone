@@ -671,10 +671,6 @@ main {
 }
 
 /* 호버 효과 */
-.mycontent-card:hover h3 {
-  text-decoration: underline;
-}
-
 .favorite-label:hover {
   background-color: var(--color-border);
 }
