@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="site-header">
+    <header>
+      <div class="container site-header">
         <h1>
           <a href="index.html">
             <svg
@@ -36,10 +36,10 @@
         </h1>
         <nav>
           <ul class="service-list">
-            <li><a href="index.html">홈</a></li>
+            <li><a href="index.html" class="home">홈</a></li>
             <li><a href="#">영화</a></li>
             <li><a href="#">시리즈</a></li>
-            <li><a href="#">내가 찜한 콘텐츠</a></li>
+            <li><a href="mypage.html">내가 찜한 콘텐츠</a></li>
           </ul>
         </nav>
         <div class="page-link-layout">
@@ -81,8 +81,10 @@
             <span class="mypage-text">다미의 마이페이지</span>
           </a>
         </div>
-      </header>
-      <main class="mypage-main">
+      </div>
+    </header>
+    <main>
+      <div class="container mypage-main">
         <div class="mypage-big">
           <p class="mycinemo">MY CINEMO</p>
           <h2>마이페이지</h2>
@@ -340,27 +342,31 @@
             <div><a href="profile.html">로그아웃</a></div>
           </div>
         </section>
-      </main>
-      <footer class="site-footer">
-        <nav>
-          <ul class="footer-menu">
-            <li><a href="#">서비스 소개</a></li>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">개인정보 처리방침</a></li>
-            <li><a href="#">고객센터</a></li>
-          </ul>
-        </nav>
-        <p class="footer-notice">
-          <span>CINEMO는 학습을 위한 가상의 OTT 서비스입니다.</span>
-          <span
-            >콘텐츠와 인물은 모두 허구이며 실제 결제 · 재생은 제공하지
-            않습니다.</span
-          >
-        </p>
-        <p class="footer-copyright">
-          &copy; 2026 CINEMO. A FICTIONAL STREAMING PROJECT.
-        </p>
-      </footer>
-    </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-line">
+        <div class="container site-footer main-footer">
+          <nav>
+            <ul class="footer-menu">
+              <li><a href="#">서비스 소개</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보 처리방침</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </nav>
+          <div class="footer-notice">
+            <span>CINEMO는 학습을 위한 가상의 OTT 서비스입니다.</span>
+            <span>
+              콘텐츠와 인물은 모두 허구이며 실제 결제 · 재생은 제공하지
+              않습니다.
+            </span>
+          </div>
+          <p class="footer-copyright">
+            &copy; 2026 CINEMO. A FICTIONAL STREAMING PROJECT.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

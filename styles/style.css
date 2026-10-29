@@ -13,8 +13,17 @@
 
 /* 전체 레이아웃 */
 .container {
-  max-width: 1440px;
+  width: 100%;
   margin: auto;
+  max-width: 1440px;
+}
+
+.main-container {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 main {
@@ -24,7 +33,7 @@ main {
 /* 헤더 */
 .site-header {
   height: 88px;
-  padding: 0 64px;
+  padding: 0 24px;
 
   display: flex;
   align-items: center;
@@ -32,6 +41,7 @@ main {
 
   color: var(--color-text);
   background-color: var(--color-background);
+  margin: 0 auto;
 }
 
 .service-list {
@@ -98,17 +108,20 @@ main {
 }
 
 /* 푸터 */
+.footer-line {
+  border-top: 1px solid var(--color-border);
+}
+
 .site-footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
 
   height: 166px;
-  padding: 40px 64px;
+  padding: 40px 24px;
 
   color: var(--color-gray-light);
   font-size: 11px;
-  border-top: 1px solid var(--color-border);
   background-color: var(--color-background);
 }
 
@@ -142,8 +155,7 @@ main {
   min-height: 590px;
 
   display: flex;
-  align-items: flex-start;
-  padding: 104px 64px 72px;
+  padding: 104px 0 72px;
 }
 
 .top-image {
@@ -173,19 +185,14 @@ main {
 .top-content {
   position: relative;
   z-index: 1;
-
   width: 100%;
-  max-width: 540px;
-
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
 .top-caption {
-  position: absolute;
-  right: 64px;
-  bottom: 72px;
+  position: relative;
   z-index: 1;
 
   text-align: right;
@@ -193,6 +200,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  justify-self: flex-end;
 }
 
 .content-label {
@@ -326,7 +334,7 @@ main {
 }
 
 .card-layout {
-  padding: 16px 64px 64px;
+  padding: 16px 24px 64px;
 
   display: flex;
   flex-direction: column;
@@ -381,7 +389,7 @@ main {
 }
 
 .card img {
-  width: 310px;
+  width: 100%;
   height: auto;
 }
 
@@ -419,7 +427,7 @@ main {
   gap: 56px;
 
   flex: 1;
-  padding: 56px 64px 64px;
+  padding: 56px 24px 64px;
 
   background-color: var(--color-background);
 }
@@ -943,7 +951,7 @@ body {
     height: 120px;
     border-bottom: 1px solid var(--color-border);
 
-    padding: 0 24px;
+    padding: 0 16px;
     flex-wrap: wrap;
     gap: 0;
   }
@@ -982,9 +990,13 @@ body {
   }
 
   /* 메인페이지 메인 상단 */
+  .main-container {
+    padding: 0 16px;
+  }
+
   .top-layout {
     min-height: 0;
-    padding: 260px 24px 36px;
+    padding: 260px 0 36px;
   }
 
   .top-image {
@@ -1030,7 +1042,7 @@ body {
 
   /* 메인페이지 콘텐츠박스 */
   .card-layout {
-    padding: 8px 0 40px;
+    padding: 8px 16px 40px;
     gap: 36px;
   }
 
@@ -1038,26 +1050,19 @@ body {
     gap: 18px;
   }
 
-  .card-section,
-  .card-container {
-    padding: 0 24px;
-  }
-
   .card-container {
     grid-template-columns: repeat(4, 240px);
     gap: 16px;
-    padding: 0 24px 24px;
+    padding: 0 0 24px;
     overflow-x: auto;
   }
 
   .card-container::-webkit-scrollbar {
-    width: 96px;
     height: 3px;
   }
 
   .card-container::-webkit-scrollbar-track {
     background-color: var(--color-button-background);
-    margin: 0 24px;
   }
 
   .card-container::-webkit-scrollbar-thumb {
@@ -1090,7 +1095,7 @@ body {
   /* 마이페이지 레이아웃 */
   .mypage-main {
     gap: 36px;
-    padding: 36px 24px 40px;
+    padding: 36px 16px 40px;
   }
 
   /* 마이페이지 프로필 */
@@ -1202,10 +1207,9 @@ body {
   /* 푸터 */
   .site-footer {
     gap: 20px;
-    padding: 32px 24px 32px;
+    padding: 32px 16px;
 
     height: auto;
-    padding: 32px 24px;
   }
 
   .site-footer .footer-menu {
@@ -1218,6 +1222,9 @@ body {
   }
 
   .site-footer .footer-notice span {
+    display: block;
+  }
+  .footer-notice span {
     display: block;
   }
 }
