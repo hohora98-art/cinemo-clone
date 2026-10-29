@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="site-header">
+    <header>
+      <div class="container site-header">
         <h1>
           <a href="index-jiho.html">
             <svg
@@ -39,7 +39,7 @@
             <li><a href="index-jiho.html" class="home">홈</a></li>
             <li><a href="#">영화</a></li>
             <li><a href="#">시리즈</a></li>
-            <li><a href="#">내가 찜한 콘텐츠</a></li>
+            <li><a href="mypage-jiho.html">내가 찜한 콘텐츠</a></li>
           </ul>
         </nav>
         <div class="page-link-layout">
@@ -81,15 +81,17 @@
             <span class="mypage-text">준범의 마이페이지</span>
           </a>
         </div>
-      </header>
-      <main>
-        <section class="top-layout">
-          <div class="top-image">
-            <img
-              src="assets/Image-quiet-orbit.jpg"
-              alt="우주복을 입은 사람이 해변에 서 있고, 바다에는 거대한 검은 기둥이 솟아 있다."
-            />
-          </div>
+      </div>
+    </header>
+    <main>
+      <section class="top-layout">
+        <div class="top-image">
+          <img
+            src="assets/Image-quiet-orbit.jpg"
+            alt="우주복을 입은 사람이 해변에 서 있고, 바다에는 거대한 검은 기둥이 솟아 있다."
+          />
+        </div>
+        <div class="container main-container">
           <div class="top-content">
             <div class="content-label">
               <span></span>
@@ -152,131 +154,136 @@
             <p>고요가 시작되는 곳, 이야기가 깨어난다.</p>
             <p>A CINEMO ORIGINAL CONCEPT</p>
           </div>
-        </section>
-        <div class="card-layout">
-          <div class="card-layout-section">
-            <div class="card-section">
-              <div class="section-header">
-                <h2>오늘, 새로운 세계로</h2>
-                <span>4편의 이야기</span>
-              </div>
-              <p>낯선 풍경 속에서 시작되는 네 편의 이야기</p>
-            </div>
-            <ul class="card-container">
-              <li class="card">
-                <img
-                  src="./assets/Image-quiet-orbit.jpg"
-                  alt="우주복을 입은 사람이 해변에 서 있고, 바다에는 거대한 검은 기둥이 솟아 있다."
-                />
-                <div class="card-title">
-                  <h3>고요의 궤도</h3>
-                  <p>SF • 미스터리 • 15+</p>
-                </div>
-              </li>
-              <li class="card">
-                <img
-                  src="./assets/Image-last-platform.jpg"
-                  alt="안개 낀 산속 기차역에서 가방을 든 여성이 열차 앞에 서 있다."
-                />
-                <div class="card-title">
-                  <h3>마지막 승강장</h3>
-                  <p>드라마 • 12+</p>
-                </div>
-              </li>
-              <li class="card">
-                <img
-                  src="./assets/Image-blue-hour.jpg"
-                  alt="연인이 옥상에 서서 노을 진 도시를 바라보고 있다."
-                />
-                <div class="card-title">
-                  <h3>파란 시간</h3>
-                  <p>로맨스 • 드라마 • 12+</p>
-                </div>
-              </li>
-              <li class="card">
-                <img
-                  src="./assets/Image-forest-letter.jpg"
-                  alt="햇살이 따뜻하게 비치는 숲속에서 오두막집과 빨간 우체통이 보인다."
-                />
-                <div class="card-title">
-                  <h3>숲에서 온 편지</h3>
-                  <p>판타지 • 드라마 • 전체</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="card-layout-section">
-            <div class="card-section">
-              <div class="section-header">
-                <h2>밤이 깊어질 때</h2>
-                <span>4편의 이야기</span>
-              </div>
-              <p>하루의 끝에 오래 남을, 조용하고 짙은 장면들</p>
-            </div>
-            <ul class="card-container">
-              <li class="card">
-                <img
-                  src="./assets/Image-after-rain.jpg"
-                  alt="비에 젖은 골목의 책방에서 따뜻한 불빛이 새어 나오고, 앞에는 자전거가 세워져 있다."
-                />
-                <div class="card-title">
-                  <h3>비가 그친 자리</h3>
-                  <p>드라마 • 전체</p>
-                </div>
-              </li>
-              <li class="card">
-                <img
-                  src="./assets/Image-night-diver.jpg"
-                  alt="잠수부가 어두운 물속의 계단 아래를 손전등으로 비추고 있다."
-                />
-                <div class="card-title">
-                  <h3>밤의 잠수부</h3>
-                  <p>스릴러 • 미스터리 • 15+</p>
-                </div>
-              </li>
-              <li class="card">
-                <img
-                  src="./assets/Image-forest-letter.jpg"
-                  alt="햇살이 따뜻하게 비치는 숲속에서 오두막집과 빨간 우체통이 보인다."
-                />
-                <div class="card-title">
-                  <h3>숲에서 온 편지</h3>
-                  <p>판타지 • 드라마 • 전체</p>
-                </div>
-              </li>
-              <li class="card">
-                <img
-                  src="./assets/Image-blue-hour.jpg"
-                  alt="연인이 옥상에 서서 노을 진 도시를 바라보고 있다."
-                />
-                <div class="card-title">
-                  <h3>파란 시간</h3>
-                  <p>로맨스 • 드라마 • 12+</p>
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
-      </main>
-      <footer class="site-footer main-footer">
-        <nav>
-          <ul class="footer-menu">
-            <li><a href="#">서비스 소개</a></li>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">개인정보 처리방침</a></li>
-            <li><a href="#">고객센터</a></li>
+      </section>
+      <div class="container card-layout">
+        <div class="card-layout-section">
+          <div class="card-section">
+            <div class="section-header">
+              <h2>오늘, 새로운 세계로</h2>
+              <span>4편의 이야기</span>
+            </div>
+            <p>낯선 풍경 속에서 시작되는 네 편의 이야기</p>
+          </div>
+          <ul class="card-container">
+            <li class="card">
+              <img
+                src="./assets/Image-quiet-orbit.jpg"
+                alt="우주복을 입은 사람이 해변에 서 있고, 바다에는 거대한 검은 기둥이 솟아 있다."
+              />
+              <div class="card-title">
+                <h3>고요의 궤도</h3>
+                <p>SF • 미스터리 • 15+</p>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./assets/Image-last-platform.jpg"
+                alt="안개 낀 산속 기차역에서 가방을 든 여성이 열차 앞에 서 있다."
+              />
+              <div class="card-title">
+                <h3>마지막 승강장</h3>
+                <p>드라마 • 12+</p>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./assets/Image-blue-hour.jpg"
+                alt="연인이 옥상에 서서 노을 진 도시를 바라보고 있다."
+              />
+              <div class="card-title">
+                <h3>파란 시간</h3>
+                <p>로맨스 • 드라마 • 12+</p>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./assets/Image-forest-letter.jpg"
+                alt="햇살이 따뜻하게 비치는 숲속에서 오두막집과 빨간 우체통이 보인다."
+              />
+              <div class="card-title">
+                <h3>숲에서 온 편지</h3>
+                <p>판타지 • 드라마 • 전체</p>
+              </div>
+            </li>
           </ul>
-        </nav>
-        <div class="footer-notice">
-          <p>CINEMO는 학습을 위한 가상의 OTT 서비스입니다.</p>
-          <p>
-            콘텐츠와 인물은 모두 허구이며 실제 결제 · 재생은 제공하지 않습니다.
+        </div>
+        <div class="card-layout-section">
+          <div class="card-section">
+            <div class="section-header">
+              <h2>밤이 깊어질 때</h2>
+              <span>4편의 이야기</span>
+            </div>
+            <p>하루의 끝에 오래 남을, 조용하고 짙은 장면들</p>
+          </div>
+          <ul class="card-container">
+            <li class="card">
+              <img
+                src="./assets/Image-after-rain.jpg"
+                alt="비에 젖은 골목의 책방에서 따뜻한 불빛이 새어 나오고, 앞에는 자전거가 세워져 있다."
+              />
+              <div class="card-title">
+                <h3>비가 그친 자리</h3>
+                <p>드라마 • 전체</p>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./assets/Image-night-diver.jpg"
+                alt="잠수부가 어두운 물속의 계단 아래를 손전등으로 비추고 있다."
+              />
+              <div class="card-title">
+                <h3>밤의 잠수부</h3>
+                <p>스릴러 • 미스터리 • 15+</p>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./assets/Image-forest-letter.jpg"
+                alt="햇살이 따뜻하게 비치는 숲속에서 오두막집과 빨간 우체통이 보인다."
+              />
+              <div class="card-title">
+                <h3>숲에서 온 편지</h3>
+                <p>판타지 • 드라마 • 전체</p>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./assets/Image-blue-hour.jpg"
+                alt="연인이 옥상에 서서 노을 진 도시를 바라보고 있다."
+              />
+              <div class="card-title">
+                <h3>파란 시간</h3>
+                <p>로맨스 • 드라마 • 12+</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-line">
+        <div class="container site-footer main-footer">
+          <nav>
+            <ul class="footer-menu">
+              <li><a href="#">서비스 소개</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보 처리방침</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </nav>
+          <div class="footer-notice">
+            <span>CINEMO는 학습을 위한 가상의 OTT 서비스입니다.</span>
+            <span>
+              콘텐츠와 인물은 모두 허구이며 실제 결제 · 재생은 제공하지
+              않습니다.
+            </span>
+          </div>
+          <p class="footer-copyright">
+            &copy; 2026 CINEMO. A FICTIONAL STREAMING PROJECT.
           </p>
         </div>
-        <p class="footer-copyright">
-          &copy; 2026 CINEMO. A FICTIONAL STREAMING PROJECT.
-        </p>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
