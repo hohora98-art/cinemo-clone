@@ -777,10 +777,10 @@ main {
 .header-layout {
   display: flex;
   align-items: center;
-
+  margin: 0 auto;
   height: 88px;
   width: 100%;
-  padding: 0 64px;
+  padding: 0 24px;
   background-color: #101113;
 }
 
@@ -790,7 +790,7 @@ main {
   align-items: center;
 
   gap: 56px;
-  padding: 116px 64px 120px;
+  padding: 116px 24px 120px;
 }
 
 .logo {
@@ -930,6 +930,11 @@ body {
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
+}
+
+.profile-footer {
+  height: 88px;
+  padding: 0 24px;
 }
 
 .profile-footer p {
@@ -1170,11 +1175,11 @@ body {
 
   /* 프로필페이지 */
   .header-layout {
-    padding: 0 24px;
+    padding: 0 16px;
   }
 
   .profile-page-layout {
-    padding: 56px 24px;
+    padding: 56px 16px;
     gap: 40px;
   }
 
@@ -1226,5 +1231,8 @@ body {
   }
   .footer-notice span {
     display: block;
+  }
+  .profile-footer {
+    padding: 0 16px;
   }
 }
