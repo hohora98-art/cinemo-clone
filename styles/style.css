@@ -1193,11 +1193,16 @@ body {
 
   .profile-list {
     grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
+    gap: 28px 32px;
   }
 
   .profile-list p {
     display: none;
+  }
+
+  .profile-avatar-wrap svg {
+    width: 136px;
+    height: 136px;
   }
 
   /* 푸터 */
