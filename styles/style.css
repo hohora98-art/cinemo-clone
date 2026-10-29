@@ -529,11 +529,6 @@ main {
   border-radius: 4px;
 }
 
-.profile-change img {
-  width: 18px;
-  height: 18px;
-}
-
 .date {
   display: none;
 }
@@ -765,10 +760,13 @@ main {
 }
 
 /* 호버 효과 */
-.setting-footer a:hover,
-.setting-row a:hover {
-  font-weight: 500;
+.setting-footer a:hover {
   text-decoration: underline;
+}
+
+.setting-row button:hover {
+  font-weight: 600;
+  color: var(--color-text);
 }
 
 /* 프로필페이지 */
@@ -1106,7 +1104,7 @@ body {
     gap: 24px;
   }
 
-  .profile-change img {
+  .profile-change svg {
     display: none;
   }
 
