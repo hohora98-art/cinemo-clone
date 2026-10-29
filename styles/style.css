@@ -350,7 +350,7 @@ main {
   justify-content: space-between;
 }
 
-.section-header h3 {
+.section-header h2 {
   font-size: 24px;
   font-weight: 700;
   color: var(--color-text);
@@ -391,7 +391,7 @@ main {
   gap: 4px;
 }
 
-.card-title h4 {
+.card-title h3 {
   color: var(--color-text);
   font-size: 16px;
   font-weight: 500;
@@ -404,7 +404,7 @@ main {
 }
 
 /* 호버 효과 */
-.card:hover h4 {
+.card:hover h3 {
   text-decoration: underline;
 }
 
