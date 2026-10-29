@@ -65,11 +65,11 @@
 
 1. 저장소를 로컬 컴퓨터로 복제(Clone)합니다.
    ```bash
-   git clone https://github.com
+   git clone https://github.com/hohora98-art/cinemo-clone.git
    ```
 2. 프로젝트 폴더로 이동합니다.
    ```bash
-   cd cinemo-project
+   cd cinemo-clone
    ```
 3. `index.html` 파일을 더블 클릭하거나, VS Code의 `Live Server` 익스텐션을 활용해 로컬 서버 환경에서 실행합니다.
 
@@ -77,5 +77,5 @@
 
 본 프로젝트는 아래 배포 링크를 통해 설치 없이 웹 브라우저에서 즉시 확인하실 수 있습니다.
 
-- **실행 링크 (GitHub Pages):** [👉 CINEMO 보러가기](https://github.io)
-- **디자인 가이드 (Figma):** [👉 피그마 프로젝트 링크](https://figma.com...)
+- **실행 링크 (GitHub Pages):** [👉 CINEMO 보러가기] -https://github.com/hohora98-art/cinemo-clone
+- **디자인 가이드 (Figma):** [👉 피그마 프로젝트 링크] https://www.figma.com/design/EiKQEY9QBrCbw01FxBkeZ4/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C--%EB%B3%B5%EC%82%AC-?node-id=0-1&t=sjxTEVf8URuvA2cv-1
